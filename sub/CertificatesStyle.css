@@ -279,8 +279,10 @@ hr {
 
 #cBachelor {
   padding-top: 6rem;
+  margin-top: -6rem;
 }
 
 #cTriz {
   padding-top: 6rem;
+  margin-top: -6rem;
 }
