@@ -161,25 +161,25 @@
         z-index: 3;
         /* border: 3px solid mediumvioletred; */
       }
-      /* a:visited {
-        color: blue;
-      } */
-      */ a:link {
-        /* color: rgb(21, 99, 201); */
-        color: red;
+
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
+
       .contact {
         position: fixed;
         display: flex;
         width: 6%;
-        height: auto;
         margin: 0;
         padding: 0;
-        bottom: 5%;
         right: 0%;
         flex-direction: column;
         align-items: flex-end;
-        justify-content: flex-start;
         /* border: 5px solid green; */
       }
       .contact img {
@@ -208,13 +208,6 @@
         font: 400 2vw/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
         text-align: right;
         /* border: 5px solid pink; */
-      }
-
-      @media only screen and (max-width: 600px) {
-        .contact {
-          position: fixed;
-          bottom: 35rem;
-        }
       }
 
       /*-------START OF ABOUT ME---------------*/
@@ -541,28 +534,30 @@
       </ol>
     </div>
 
-    <div class="contact">
-      <p>Let's talk!</p>
-      <a href="sub/Contact.html"
-        ><img
-          id="whatsapp"
-          name="whatsapp"
-          src="sub/whatsapp.png"
-          alt="not found"
-      /></a>
-      <a href="sub/Contact.html"
-        ><img id="email" name="email" src="sub/email.png" alt="not found"
-      /></a>
-      <a href="sub/Contact.html"
-        ><img id="call" name="call" src="sub/telefon3.png" alt="not found"
-      /></a>
-      <a href="sub/Contact.html"
-        ><img
-          id="linkedin"
-          name="linkedin"
-          src="sub/linkedin.png"
-          alt="not found"
-      /></a>
+    <div class="flex-container">
+      <div class="contact">
+        <p>Let's talk!</p>
+        <a href="sub/Contact.html"
+          ><img
+            id="whatsapp"
+            name="whatsapp"
+            src="sub/whatsapp.png"
+            alt="not found"
+        /></a>
+        <a href="sub/Contact.html"
+          ><img id="email" name="email" src="sub/email.png" alt="not found"
+        /></a>
+        <a href="sub/Contact.html"
+          ><img id="call" name="call" src="sub/telefon3.png" alt="not found"
+        /></a>
+        <a href="sub/Contact.html"
+          ><img
+            id="linkedin"
+            name="linkedin"
+            src="sub/linkedin.png"
+            alt="not found"
+        /></a>
+      </div>
     </div>
   </body>
 </html>
