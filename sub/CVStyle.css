@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&display=swap");
+
+/*----------------START OF CV---------------*/
+/*-------------CV--------------------*/
+.CV {
+  position: relative;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  /* border: 4px solid red; */
+}
+
+.CV img {
+  position: relative;
+  top: 2.6rem;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+  flex-wrap: nowrap;
+  /* border: 4px solid blue; */
+}
+/*-------------Download Button--------------------*/
+.download {
+  position: fixed;
+  white-space: nowrap;
+  width: 15vw;
+  height: auto;
+  right: 2%;
+  top: 2vh;
+  border-radius: 2rem;
+  /* margin: 1.3vw; */
+  padding: 0.3rem;
+  text-align: center;
+  font: 400 2vw/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+  z-index: 6;
+  background-image: linear-gradient(
+      hsla(215, 30%, 70%, 0.9) 0%,
+      hsla(215, 30%, 70%, 0) 50%,
+      hsla(215, 30%, 70%, 0.9) 100%
+    ),
+    linear-gradient(
+      to right,
+      hsla(215, 30%, 80%, 0.8) 30%,
+      white 50%,
+      hsla(215, 30%, 80%, 0.8) 70%
+    );
+
+  /*border: 5px solid green;*/
+}

@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&display=swap");
+
+/*--------------START CERTIFICATION-----------------*/
+/*--------------HORIZONTAL LINE-----------------*/
+hr {
+  position: relative;
+  right: 2rem;
+  margin: 2rem;
+  height: 0.2rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #ff9d2f;
+  width: 90vw;
+  box-shadow: 0 0 0.7rem 0.7rem #3a3229;
+}
+
+/*--------------HEADING "CERTIFICATION"-----------------*/
+
+.cheading {
+  position: relative;
+  /* width: 50vw; */
+  padding-top: 16%;
+  z-index: 2;
+  /* border: 5px solid green; */
+}
+
+#certi_heading {
+  position: relative;
+  width: 50vw;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin: 0 auto;
+  white-space: nowrap;
+  text-align: center;
+  font: 400 2.5vw/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+  background-image: linear-gradient(
+      hsla(215, 30%, 70%, 0.9) 0%,
+      hsla(215, 30%, 70%, 0) 50%,
+      hsla(215, 30%, 70%, 0.9) 100%
+    ),
+    linear-gradient(
+      to right,
+      hsla(215, 30%, 80%, 0.8) 30%,
+      white 50%,
+      hsla(215, 30%, 80%, 0.8) 70%
+    );
+  /* border: 5px solid green; */
+}
+
+/* -----------------SMALL CONTAINER AT THE TOP----------------  */
+.certi_small {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: center;
+  width: 55vw;
+  margin: auto;
+  height: 20vw;
+  margin-top: 2rem;
+  /* border: 5px solid pink; */
+}
+
+.certi_small img {
+  width: 11vw;
+}
+
+.certi_small p {
+  position: absolute;
+  padding: 0.5rem;
+  white-space: nowrap;
+  /* margin-left: 0.7vw; */
+  background-image: linear-gradient(
+      hsla(215, 30%, 70%, 0.9) 0%,
+      hsla(215, 30%, 70%, 0) 50%,
+      hsla(215, 30%, 70%, 0.9) 100%
+    ),
+    linear-gradient(
+      to right,
+      hsla(215, 30%, 80%, 0.8) 30%,
+      white 50%,
+      hsla(215, 30%, 80%, 0.8) 70%
+    );
+  width: 10vw;
+  border-radius: 0.5rem;
+  height: 1rem;
+  font: 400 1.2vw/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .certi_small p {
+    height: 0.1rem;
+  }
+}
+/* -----------------BIG CONTAINER-----------------------  */
+.big {
+  position: relative;
+  width: 95vw;
+  height: auto;
+  margin-top: 5%;
+  margin-left: 3%;
+  /* border: 5px solid red; */
+}
+
+.big div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: center;
+  /* border: 5px solid darkslategrey; */
+}
+/* ----------------IMAGES-----------------  */
+.big img {
+  position: relative;
+  height: auto;
+  margin: 1%;
+  max-width: 40%;
+  object-fit: contain;
+}
+/* ----------------CONTAINER AROUND H2 and P [ctext]-----------------  */
+.ctext {
+  position: relative;
+  width: 50vw;
+  flex-wrap: nowrap;
+  left: -2rem;
+  /* border: 10px solid pink; */
+}
+
+@media screen and (max-width: 750px) {
+  .ctext {
+    position: relative;
+    left: -2rem;
+    width: 45vw;
+  }
+}
+
+/* ----------------BIG CONTAINER HEADINGS H2-----------------------  */
+.big h2 {
+  position: relative;
+  max-height: 1.8rem;
+  top: 0rem;
+  margin-top: 0;
+  border-radius: 4rem;
+  padding: 1rem;
+  padding-bottom: 2.2rem;
+  font-family: Garamond;
+  font-size: 2vw;
+  border: 3px solid grey;
+  background-image: linear-gradient(
+      hsla(215, 30%, 70%, 0.9) 0%,
+      hsla(215, 30%, 70%, 0) 50%,
+      hsla(215, 30%, 70%, 0.9) 100%
+    ),
+    linear-gradient(
+      to right,
+      hsla(215, 30%, 80%, 0.8) 30%,
+      white 50%,
+      hsla(215, 30%, 80%, 0.8) 70%
+    );
+}
+
+.cTriz h2 {
+  position: relative;
+  min-height: 2.4rem;
+}
+
+.cBachelor h2 {
+  position: relative;
+  min-height: 2.4rem;
+}
+
+/* -----------------MEDIA BIG H2-----------------------  */
+@media screen and (max-width: 1000px) {
+  /*1000 or smaller*/
+  .big h2 {
+    position: relative;
+    white-space: nowrap;
+    min-height: 3.5vw;
+    height: 6vw;
+    border: 2px solid grey;
+    border-radius: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.2rem;
+    margin-bottom: 0.1rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  /*1900 or bigger*/
+  .big h2 br {
+    display: none; /*puts long headings back in one line bzw removes br*/
+  }
+
+  .big h2 {
+    max-height: 2vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  /*750 or smaller*/
+  .big h2 {
+    font-size: 0.5rem;
+    overflow: auto;
+  }
+}
+
+/* ----------------BIG CONTAINER TEXT P-----------------------  */
+.big p {
+  position: absolute;
+  margin-top: 8rem;
+  /* min-width: 25vw; */
+  max-width: 45vw;
+  min-height: 20%; /*to adapt div to text content*/
+  padding: 1rem;
+  overflow: auto;
+  text-align: left;
+  font-family: Garamond;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  background: rgb(255, 157, 47);
+  background: radial-gradient(
+    circle,
+    rgba(247, 217, 85, 0.852) 0%,
+    rgb(232, 156, 57) 100%
+  );
+
+  /* border: 5px solid blue; */
+}
+
+/* -----------------MEDIA BIG P-----------------------  */
+
+@media screen and (max-width: 1200px) {
+  /*1200 or smaller*/
+  .big p {
+    position: absolute;
+    min-height: 10%;
+    max-height: 30vh;
+    width: 90%;
+    top: 2%;
+    margin-top: 20%;
+    border-radius: 1rem;
+  }
+
+  .cUdemy p {
+    position: absolute;
+    min-height: 10%;
+    height: 10vh;
+    width: 90%;
+    top: 2%;
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  /*750 or smaller*/
+  .big p {
+    font-size: 0.5rem;
+    padding: 0.4rem;
+  }
+  .cUdemy p {
+    min-height: 15%;
+    height: 6vh;
+    top: 2%;
+    margin-top: 20%;
+  }
+}
+
+.big img:hover {
+  position: relative;
+  transform: scale(1.5);
+  transition: all 1.5s ease-in-out;
+  left: 25rem;
+  border-radius: 1rem;
+  z-index: 7;
+}
+
+#cBachelor {
+  padding-top: 6rem;
+}
+
+#cTriz {
+  padding-top: 6rem;
+}

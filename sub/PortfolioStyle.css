@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&display=swap");
+
+/*------------START PORTFOLIO----------*/
+
+/*--------------HEADING "CERTIFICATION"-----------------*/
+
+.pheading {
+  position: relative;
+  /* width: 50vw; */
+  padding-top: 16%;
+  z-index: 2;
+  /* border: 5px solid green; */
+}
+
+#port_heading {
+  position: relative;
+  width: 50vw;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin: 0 auto;
+  white-space: nowrap;
+  text-align: center;
+  font: 400 2.5vw/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+  background-image: linear-gradient(
+      hsla(215, 30%, 70%, 0.9) 0%,
+      hsla(215, 30%, 70%, 0) 50%,
+      hsla(215, 30%, 70%, 0.9) 100%
+    ),
+    linear-gradient(
+      to right,
+      hsla(215, 30%, 80%, 0.8) 30%,
+      white 50%,
+      hsla(215, 30%, 80%, 0.8) 70%
+    );
+  /* border: 5px solid green; */
+}
+
+/* -----------------SMALL CONTAINER AT THE TOP----------------  */
+.port_small {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: center;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: auto;
+  margin-top: 2rem;
+  padding-bottom: 2.5rem;
+  /* border: 5px solid pink; */
+}
+
+/*----------IMG AND P IN SMALL CONTAINER AT TOP----------*/
+
+.port_small img {
+  width: 11vw;
+}
+
+.port_small p {
+  position: absolute;
+  padding: 0.5rem;
+  white-space: nowrap;
+  background-image: linear-gradient(
+      hsla(215, 30%, 70%, 0.9) 0%,
+      hsla(215, 30%, 70%, 0) 50%,
+      hsla(215, 30%, 70%, 0.9) 100%
+    ),
+    linear-gradient(
+      to right,
+      hsla(215, 30%, 80%, 0.8) 30%,
+      white 50%,
+      hsla(215, 30%, 80%, 0.8) 70%
+    );
+  width: 10vw;
+  border-radius: 0.5rem;
+  height: 1rem;
+  font: 400 1.2vw/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+}
+
+/*------- @MEDIA FOR P IN SMALL CONTAINER AT TOP------------*/
+@media screen and (max-width: 600px) {
+  .port_small p {
+    height: 0.1rem;
+  }
+}
+
+/*------------ HEADING TEXT AT TOP "LONGTEXT"----------*/
+.longtext {
+  position: relative;
+
+  padding: 1rem;
+  width: 85vw;
+  max-height: 20vw;
+  margin: auto;
+  margin-top: 1rem;
+
+  padding: 0.5rem;
+
+  font-family: Garamond;
+  font-size: 1vw;
+  font-weight: 800;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+  color: rgb(41, 38, 38);
+
+  border-radius: 1rem;
+  border-bottom: 2px dashed rgb(23, 0, 128);
+  border-top: 2px dashed rgb(23, 0, 128);
+  overflow: auto;
+  z-index: 3;
+
+  background-image: linear-gradient(
+      hsla(215, 30%, 70%, 0.9) 0%,
+      hsla(215, 30%, 70%, 0) 50%,
+      hsla(215, 30%, 70%, 0.9) 100%
+    ),
+    linear-gradient(
+      to right,
+      hsla(215, 30%, 80%, 0.8) 30%,
+      white 50%,
+      hsla(215, 30%, 80%, 0.8) 70%
+    );
+}
+
+/*------------ @MEDIA HEADING AT TOP----------*/
+@media screen and (max-width: 1200px) {
+  .portfolio h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio h2 {
+    font-size: 1rem;
+  }
+}
+
+/*------------ ENTIRE PORTFOLIO CONTAINER----------*/
+.portfolio {
+  position: relative;
+  top: 0rem;
+  width: 95vw;
+  height: auto;
+  margin-left: 3%;
+  /* border: 3px solid green; */
+}
+/*------------ @MEDIA ENTIRE PORTFOLIO CONTAINER----------*/
+/* @media screen and (max-width: 1000px) {
+         .portfolio {
+
+           top: 8%;
+         }
+       } */
+
+/*------------ SINGLE DIVS ( with img,p and a) ----------*/
+.portfolio div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  text-align: center;
+  position: relative;
+  /* top: 12.8rem; */
+  height: 25vw;
+
+  background: rgba(212, 204, 201, 0.6);
+}
+
+/* @media screen and (max-width: 800px) {
+         .portfolio div {
+           top: 8rem;
+         }
+       } */
+
+/*------------ IMAGES AND TEXT ----------*/
+
+.portfolio img {
+  position: relative;
+  height: auto;
+  max-width: 35%;
+  object-fit: contain;
+
+  /* border: 4px solid purple; */
+}
+
+/*------------ LINKED HEADING IN THE MIDDLE----------*/
+
+.portfolio a {
+  position: relative;
+  left: 3rem;
+  top: 40%;
+  height: 2vh;
+  min-width: 12vw;
+  max-height: 2vh;
+  padding: 1rem;
+  white-space: nowrap;
+  border-radius: 4rem;
+  border: 2px solid grey;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-family: Garamond;
+  font-size: 1.6rem;
+  font-weight: 1000;
+  color: black;
+  background-image: url(bluebacky.png);
+}
+/*------------ @MEDIA FOR LINK IN MIDDLE----------*/
+@media screen and (max-width: 1200px) {
+  /*1200 or smaller*/
+  .portfolio a {
+    font-size: 1rem;
+    rotate: -90deg;
+    max-height: 6vh;
+    padding: 0.5rem;
+    left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .portfolio a {
+    font-size: 0.4rem;
+    font-weight: 700;
+    white-space: normal;
+    rotate: -90deg;
+    min-width: 10vw;
+    max-height: 2vh;
+    padding: 0.1rem;
+    left: 0.2rem;
+  }
+}
+
+/*------------ TEXT BOX----------*/
+.portfolio p {
+  position: relative;
+  background-image: url(w2.png);
+  color: rgb(19, 17, 17);
+  font-weight: 500;
+  margin: auto; /*adapts container size to text content*/
+  min-width: 20vw;
+  max-width: 35vw;
+  min-height: 20%; /*to adapt div to text content*/
+  max-height: 18vw;
+  padding: 1rem;
+  overflow: auto;
+  font-family: Garamond;
+  font-size: 1.45rem;
+  border-radius: 2rem;
+  object-fit: contain;
+  overflow: auto;
+  border: 2px solid grey;
+  text-align: left;
+  /* border: 5px solid blue; */
+}
+
+/*------------ @MEDIA TEXT BOX----------*/
+@media screen and (max-width: 1200px) {
+  .portfolio p {
+    /*1200 or smaller*/
+    max-width: 40vw;
+    /* font-size: 1rem; */
+    max-height: 14vh;
+    right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio p {
+    /*1200 or smaller*/
+    max-width: 70%;
+    font-size: 1rem;
+    max-height: 50%;
+    right: 0rem;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+  }
+}
