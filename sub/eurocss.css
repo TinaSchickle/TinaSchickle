@@ -1,0 +1,237 @@
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0 padding:0 auto}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.euro-serif{font-family:serif}.euro-sans-serif{font-family:sans-serif}.euro-cursive{font-family:cursive}.euro-monospace{font-family:monospace}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:30px 0}.euro-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.euro-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.euro-table,.euro-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.euro-table-all{border:1px solid #ccc}
+.euro-bordered tr,.euro-table-all tr{border-bottom:1px solid #ddd}.euro-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.euro-table-all tr:nth-child(odd){background-color:#fff}.euro-table-all tr:nth-child(even){background-color:#f1f1f1}
+.euro-hoverable tbody tr:hover,.euro-ul.euro-hoverable li:hover{background-color:#ccc}.euro-centered tr th,.euro-centered tr td{text-align:center}
+.euro-table td,.euro-table th,.euro-table-all td,.euro-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.euro-table th:first-child,.euro-table td:first-child,.euro-table-all th:first-child,.euro-table-all td:first-child{padding-left:16px}
+.euro-btn,.euro-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.euro-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.euro-btn,.euro-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.euro-disabled,.euro-btn:disabled,.euro-button:disabled{cursor:not-allowed;opacity:0.3}.euro-disabled *,:disabled *{pointer-events:none}
+.euro-btn.euro-disabled:hover,.euro-btn:disabled:hover{box-shadow:none}
+.euro-badge,.euro-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.euro-badge{border-radius:50%}
+.euro-ul{list-style-type:none;padding:0;margin:0}.euro-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.euro-ul li:last-child{border-bottom:none}
+.euro-tooltip,.euro-display-container{position:relative}.euro-tooltip .euro-text{display:none}.euro-tooltip:hover .euro-text{display:inline-block}
+.euro-ripple:active{opacity:0.5}.euro-ripple{transition:opacity 0s}
+.euro-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.euro-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.euro-dropdown-click,.euro-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.euro-dropdown-hover:hover .euro-dropdown-content{display:block}
+.euro-dropdown-hover:first-child,.euro-dropdown-click:hover{background-color:#ccc;color:#000}
+.euro-dropdown-hover:hover > .euro-button:first-child,.euro-dropdown-click:hover > .euro-button:first-child{background-color:#ccc;color:#000}
+.euro-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.euro-check,.euro-radio{width:24px;height:24px;position:relative;top:6px}
+.euro-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.euro-bar-block .euro-dropdown-hover,.euro-bar-block .euro-dropdown-click{width:100%}
+.euro-bar-block .euro-dropdown-hover .euro-dropdown-content,.euro-bar-block .euro-dropdown-click .euro-dropdown-content{min-width:100%}
+.euro-bar-block .euro-dropdown-hover .euro-button,.euro-bar-block .euro-dropdown-click .euro-button{width:100%;text-align:left;padding:8px 16px}
+.euro-main,#main{transition:margin-left .4s}
+.euro-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.euro-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.euro-bar{width:100%;overflow:hidden}.euro-center .euro-bar{display:inline-block;width:auto}
+.euro-bar .euro-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.euro-bar .euro-dropdown-hover,.euro-bar .euro-dropdown-click{position:static;float:left}
+.euro-bar .euro-button{white-space:normal}
+.euro-bar-block .euro-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.euro-bar-block.euro-center .euro-bar-item{text-align:center}.euro-block{display:block;width:100%}
+.euro-responsive{display:block;overflow-x:auto}
+.euro-container:after,.euro-container:before,.euro-panel:after,.euro-panel:before,.euro-row:after,.euro-row:before,.euro-row-padding:after,.euro-row-padding:before,
+.euro-cell-row:before,.euro-cell-row:after,.euro-clear:after,.euro-clear:before,.euro-bar:before,.euro-bar:after{content:"";display:table;clear:both}
+.euro-col,.euro-half,.euro-third,.euro-twothird,.euro-threequarter,.euro-quarter{float:left;width:100%}
+.euro-col.s1{width:8.33333%}.euro-col.s2{width:16.66666%}.euro-col.s3{width:24.99999%}.euro-col.s4{width:33.33333%}
+.euro-col.s5{width:41.66666%}.euro-col.s6{width:49.99999%}.euro-col.s7{width:58.33333%}.euro-col.s8{width:66.66666%}
+.euro-col.s9{width:74.99999%}.euro-col.s10{width:83.33333%}.euro-col.s11{width:91.66666%}.euro-col.s12{width:99.99999%}
+@media screen (max-width: 600px){.title_message {visibility: hidden;clear: both; float: left; margin: 10px auto 5px 20px; width: 28%; display: none;
+ }
+}
+
+
+@media (min-width:601px){.euro-col.m1{width:8.33333%}.euro-col.m2{width:16.66666%}.euro-col.m3,.euro-quarter{width:24.99999%}.euro-col.m4,.euro-third{width:33.33333%}
+.euro-col.m5{width:41.66666%}.euro-col.m6,.euro-half{width:49.99999%}.euro-col.m7{width:58.33333%}.euro-col.m8,.euro-twothird{width:66.66666%}
+.euro-col.m9,.euro-threequarter{width:74.99999%}.euro-col.m10{width:83.33333%}.euro-col.m11{width:91.66666%}.euro-col.m12{width:99.99999%}}
+@media (min-width:993px){.euro-col.l1{width:8.33333%}.euro-col.l2{width:16.66666%}.euro-col.l3{width:24.99999%}.euro-col.l4{width:33.33333%}
+.euro-col.l5{width:41.66666%}.euro-col.l6{width:49.99999%}.euro-col.l7{width:58.33333%}.euro-col.l8{width:66.66666%}
+.euro-col.l9{width:74.99999%}.euro-col.l10{width:83.33333%}.euro-col.l11{width:91.66666%}.euro-col.l12{width:99.99999%}}
+.euro-rest{overflow:hidden}.euro-stretch{margin-left:-16px;margin-right:-16px}
+.euro-content,.euro-auto{margin-left:auto;margin-right:auto}.euro-content{max-width:980px}.euro-auto{max-width:1140px}
+.euro-cell-row{display:table;width:100%}.euro-cell{display:table-cell}
+.euro-cell-top{vertical-align:top}.euro-cell-middle{vertical-align:middle}.euro-cell-bottom{vertical-align:bottom}
+.euro-hide{display:none!important}.euro-show-block,.euro-show{display:block!important}.euro-show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.euro-auto{max-width:95%}}
+@media (max-width:600px){.euro-modal-content{margin:0 10px;width:auto!important}.euro-modal{padding-top:30px}
+.euro-dropdown-hover.euro-mobile .euro-dropdown-content,.euro-dropdown-click.euro-mobile .euro-dropdown-content{position:relative}	
+.euro-hide-small{display:none!important}.euro-mobile{display:block;width:100%!important}.euro-bar-item.euro-mobile,.euro-dropdown-hover.euro-mobile,.euro-dropdown-click.euro-mobile{text-align:center}
+.euro-dropdown-hover.euro-mobile,.euro-dropdown-hover.euro-mobile .euro-btn,.euro-dropdown-hover.euro-mobile .euro-button,.euro-dropdown-click.euro-mobile,.euro-dropdown-click.euro-mobile .euro-btn,.euro-dropdown-click.euro-mobile .euro-button{width:100%}}
+@media (max-width:768px){.euro-modal-content{width:500px}.euro-modal{padding-top:50px}}
+@media (min-width:993px){.euro-modal-content{width:900px}.euro-hide-large{display:none!important}.euro-sidebar.euro-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.euro-hide-medium{display:none!important}}
+@media (max-width:992px){.euro-sidebar.euro-collapse{display:none}.euro-main{margin-left:0!important;margin-right:0!important}.euro-auto{max-width:100%}}
+.euro-top,.euro-bottom{position:fixed;width:100%;z-index:1}.euro-top{top:0}.euro-bottom{bottom:0}
+.euro-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.euro-display-topleft{position:absolute;left:0;top:0}.euro-display-topright{position:absolute;right:0;top:0}
+.euro-display-bottomleft{position:absolute;left:0;bottom:0}.euro-display-bottomright{position:absolute;right:0;bottom:0}
+.euro-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.euro-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.euro-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.euro-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.euro-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.euro-display-container:hover .euro-display-hover{display:block}.euro-display-container:hover span.euro-display-hover{display:inline-block}.euro-display-hover{display:none}
+.euro-display-position{position:absolute}
+.euro-circle{border-radius:50%}
+.euro-round-small{border-radius:2px}.euro-round,.euro-round-medium{border-radius:4px}.euro-round-large{border-radius:8px}.euro-round-xlarge{border-radius:16px}.euro-round-xxlarge{border-radius:32px}
+.euro-row-padding,.euro-row-padding>.euro-half,.euro-row-padding>.euro-third,.euro-row-padding>.euro-twothird,.euro-row-padding>.euro-threequarter,.euro-row-padding>.euro-quarter,.euro-row-padding>.euro-col{padding:0 8px}
+.euro-container,.euro-panel{padding:0.01em 16px}.euro-panel{margin-top:16px;margin-bottom:16px}
+.euro-code,.euro-codespan{font-family:Consolas,"courier new";font-size:16px}
+.euro-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.euro-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.euro-card,.euro-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.euro-card-4,.euro-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.euro-spin{animation:euro-spin 2s infinite linear}@keyframes euro-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.euro-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.euro-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.euro-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.euro-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.euro-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.euro-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.euro-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.euro-animate-input{transition:width 0.4s ease-in-out}.euro-animate-input:focus{width:100%!important}
+.euro-opacity,.euro-hover-opacity:hover{opacity:0.60}.euro-opacity-off,.euro-hover-opacity-off:hover{opacity:1}
+.euro-opacity-max{opacity:0.25}.euro-opacity-min{opacity:0.75}
+.euro-greyscale-max,.euro-grayscale-max,.euro-hover-greyscale:hover,.euro-hover-grayscale:hover{filter:grayscale(100%)}
+.euro-greyscale,.euro-grayscale{filter:grayscale(75%)}.euro-greyscale-min,.euro-grayscale-min{filter:grayscale(50%)}
+.euro-sepia{filter:sepia(75%)}.euro-sepia-max,.euro-hover-sepia:hover{filter:sepia(100%)}.euro-sepia-min{filter:sepia(50%)}
+.euro-tiny{font-size:10px!important}.euro-small{font-size:12px!important}.euro-medium{font-size:15px!important}.euro-large{font-size:18px!important}
+.euro-xlarge{font-size:24px!important}.euro-xxlarge{font-size:36px!important}.euro-xxxlarge{font-size:48px!important}.euro-jumbo{font-size:64px!important}
+.euro-left-align{text-align:left!important}.euro-right-align{text-align:right!important}.euro-justify{text-align:justify!important}.euro-center{text-align:center!important}
+.euro-border-0{border:0!important}.euro-border{border:1px solid #ccc!important}
+.euro-border-top{border-top:1px solid #ccc!important}.euro-border-bottom{border-bottom:1px solid #ccc!important}
+.euro-border-left{border-left:1px solid #ccc!important}.euro-border-right{border-right:1px solid #ccc!important}
+.euro-topbar{border-top:6px solid #ccc!important}.euro-bottombar{border-bottom:6px solid #ccc!important}
+.euro-leftbar{border-left:6px solid #ccc!important}.euro-rightbar{border-right:6px solid #ccc!important}
+.euro-section,.euro-code{margin-top:16px!important;margin-bottom:16px!important}
+.euro-margin{margin:16px!important}.euro-margin-top{margin-top:16px!important}.euro-margin-bottom{margin-bottom:16px!important}
+.euro-margin-left{margin-left:16px!important}.euro-margin-right{margin-right:16px!important}
+.euro-padding-small{padding:4px 8px!important}.euro-padding{padding:8px 16px!important}.euro-padding-large{padding:12px 24px!important}
+.euro-padding-16{padding-top:16px!important;padding-bottom:16px!important}.euro-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.euro-padding-32{padding-top:32px!important;padding-bottom:32px!important}.euro-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.euro-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.euro-padding-top-64{padding-top:64px!important}.euro-padding-top-48{padding-top:48px!important}
+.euro-padding-top-32{padding-top:32px!important}.euro-padding-top-24{padding-top:24px!important}
+.euro-left{float:left!important}.euro-right{float:right!important}
+.euro-button:hover{color:#000!important;background-color:#ccc!important}
+.euro-transparent,.euro-hover-none:hover{background-color:transparent!important}
+.euro-hover-none:hover{box-shadow:none!important}
+/* Colors */
+.euro-amber,.euro-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.euro-aqua,.euro-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.euro-blue,.euro-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.euro-light-blue,.euro-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.euro-brown,.euro-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.euro-cyan,.euro-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.euro-blue-grey,.euro-hover-blue-grey:hover,.euro-blue-gray,.euro-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.euro-green,.euro-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.euro-light-green,.euro-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.euro-indigo,.euro-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.euro-khaki,.euro-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.euro-lime,.euro-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.euro-orange,.euro-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.euro-deep-orange,.euro-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.euro-pink,.euro-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.euro-purple,.euro-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.euro-deep-purple,.euro-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.euro-red,.euro-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.euro-sand,.euro-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.euro-teal,.euro-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.euro-yellow,.euro-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.euro-white,.euro-hover-white:hover{color:#000!important;background-color:#fff!important}
+.euro-black,.euro-hover-black:hover{color:#fff!important;background-color:#000!important}
+.euro-grey,.euro-hover-grey:hover,.euro-gray,.euro-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.euro-light-grey,.euro-hover-light-grey:hover,.euro-light-gray,.euro-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.euro-dark-grey,.euro-hover-dark-grey:hover,.euro-dark-gray,.euro-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.euro-pale-red,.euro-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.euro-pale-green,.euro-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.euro-pale-yellow,.euro-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.euro-pale-blue,.euro-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.euro-text-amber,.euro-hover-text-amber:hover{color:#ffc107!important}
+.euro-text-aqua,.euro-hover-text-aqua:hover{color:#00ffff!important}
+.euro-text-blue,.euro-hover-text-blue:hover{color:#2196F3!important}
+.euro-text-light-blue,.euro-hover-text-light-blue:hover{color:#87CEEB!important}
+.euro-text-brown,.euro-hover-text-brown:hover{color:#795548!important}
+.euro-text-cyan,.euro-hover-text-cyan:hover{color:#00bcd4!important}
+.euro-text-blue-grey,.euro-hover-text-blue-grey:hover,.euro-text-blue-gray,.euro-hover-text-blue-gray:hover{color:#607d8b!important}
+.euro-text-green,.euro-hover-text-green:hover{color:#4CAF50!important}
+.euro-text-light-green,.euro-hover-text-light-green:hover{color:#8bc34a!important}
+.euro-text-indigo,.euro-hover-text-indigo:hover{color:#3f51b5!important}
+.euro-text-khaki,.euro-hover-text-khaki:hover{color:#b4aa50!important}
+.euro-text-lime,.euro-hover-text-lime:hover{color:#cddc39!important}
+.euro-text-orange,.euro-hover-text-orange:hover{color:#ff9800!important}
+.euro-text-deep-orange,.euro-hover-text-deep-orange:hover{color:#ff5722!important}
+.euro-text-pink,.euro-hover-text-pink:hover{color:#e91e63!important}
+.euro-text-purple,.euro-hover-text-purple:hover{color:#9c27b0!important}
+.euro-text-deep-purple,.euro-hover-text-deep-purple:hover{color:#673ab7!important}
+.euro-text-red,.euro-hover-text-red:hover{color:#f44336!important}
+.euro-text-sand,.euro-hover-text-sand:hover{color:#fdf5e6!important}
+.euro-text-teal,.euro-hover-text-teal:hover{color:#009688!important}
+.euro-text-yellow,.euro-hover-text-yellow:hover{color:#d2be0e!important}
+.euro-text-white,.euro-hover-text-white:hover{color:#fff!important}
+.euro-text-black,.euro-hover-text-black:hover{color:#000!important}
+.euro-text-grey,.euro-hover-text-grey:hover,.euro-text-gray,.euro-hover-text-gray:hover{color:#757575!important}
+.euro-text-light-grey,.euro-hover-text-light-grey:hover,.euro-text-light-gray,.euro-hover-text-light-gray:hover{color:#f1f1f1!important}
+.euro-text-dark-grey,.euro-hover-text-dark-grey:hover,.euro-text-dark-gray,.euro-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.euro-border-amber,.euro-hover-border-amber:hover{border-color:#ffc107!important}
+.euro-border-aqua,.euro-hover-border-aqua:hover{border-color:#00ffff!important}
+.euro-border-blue,.euro-hover-border-blue:hover{border-color:#2196F3!important}
+.euro-border-light-blue,.euro-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.euro-border-brown,.euro-hover-border-brown:hover{border-color:#795548!important}
+.euro-border-cyan,.euro-hover-border-cyan:hover{border-color:#00bcd4!important}
+.euro-border-blue-grey,.euro-hover-border-blue-grey:hover,.euro-border-blue-gray,.euro-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.euro-border-green,.euro-hover-border-green:hover{border-color:#4CAF50!important}
+.euro-border-light-green,.euro-hover-border-light-green:hover{border-color:#8bc34a!important}
+.euro-border-indigo,.euro-hover-border-indigo:hover{border-color:#3f51b5!important}
+.euro-border-khaki,.euro-hover-border-khaki:hover{border-color:#f0e68c!important}
+.euro-border-lime,.euro-hover-border-lime:hover{border-color:#cddc39!important}
+.euro-border-orange,.euro-hover-border-orange:hover{border-color:#ff9800!important}
+.euro-border-deep-orange,.euro-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.euro-border-pink,.euro-hover-border-pink:hover{border-color:#e91e63!important}
+.euro-border-purple,.euro-hover-border-purple:hover{border-color:#9c27b0!important}
+.euro-border-deep-purple,.euro-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.euro-border-red,.euro-hover-border-red:hover{border-color:#f44336!important}
+.euro-border-sand,.euro-hover-border-sand:hover{border-color:#fdf5e6!important}
+.euro-border-teal,.euro-hover-border-teal:hover{border-color:#009688!important}
+.euro-border-yellow,.euro-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.euro-border-white,.euro-hover-border-white:hover{border-color:#fff!important}
+.euro-border-black,.euro-hover-border-black:hover{border-color:#000!important}
+.euro-border-grey,.euro-hover-border-grey:hover,.euro-border-gray,.euro-hover-border-gray:hover{border-color:#9e9e9e!important}
+.euro-border-light-grey,.euro-hover-border-light-grey:hover,.euro-border-light-gray,.euro-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.euro-border-dark-grey,.euro-hover-border-dark-grey:hover,.euro-border-dark-gray,.euro-hover-border-dark-gray:hover{border-color:#616161!important}
+.euro-border-pale-red,.euro-hover-border-pale-red:hover{border-color:#ffe7e7!important}.euro-border-pale-green,.euro-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.euro-border-pale-yellow,.euro-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.euro-border-pale-blue,.euro-hover-border-pale-blue:hover{border-color:#e7ffff!important}

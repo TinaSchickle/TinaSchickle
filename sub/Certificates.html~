@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title> Tina Schickle - Certificates </title>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&display=swap');
+	body {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+		right: 0px;
+		height: 100vw;
+		background-image: url('backy.jpg');
+		background-attachment: fixed;
+		/*make sure the entire element is always covered*/
+		background-size: cover;
+		/* image to cover the entire element*/
+		background-repeat: no-repeat;
+	}
+	
+	.menu {
+	position: fixed;	/*fixiert die Leiste , sodass sie auch beim Scrollen nicht verschwindet*/
+		background-color: #ff9d2f;
+		top: 0px;
+		height: 60px;
+		width: 100%;
+		right: 0px;
+		/*moves entire navbar to the right*/
+		align-self: left;
+		z-index: 1;	/* Damit das Untermenü immer über all den anderen Elementen ist */
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.menu ul {
+		list-style-type: none;	//* Entfernt die Auflistungszeichen der Links im Menü */
+		overflow: auto;
+		/* sollte kein Platz für das Wort sein, fügt es scroll Funktion hinzu*/
+		font-size: auto;
+		display: flex;
+		justify-content: center;
+		font-size: 30px;
+		padding: 5px;
+		margin: 5px;
+	}
+	
+	.menu li a {
+		display: block;
+		/*macht ges. Linkbereich klickbar und nicht nur den Text*/
+		color: white;
+		text-decoration: none;
+		/* Entfernt das Unterstreichen der Links im Menü */
+		padding: 5px 10px 5px 10px;
+	}
+	
+	.menu li a:hover {
+		background-color: #23699c;
+	}
+	
+	.welcome {
+		position: relative;
+		/*display: inline-block;*/
+		height: 220px;
+		background-image: linear-gradient(#ff9d2f, #ff6126);
+		top: 0px;
+	}
+	
+	.welcome h2 {
+		position: relative;
+		text-align: center;
+		font-size: 50px;
+		text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+		top: 20px;
+	}
+	
+	.welcome p {
+		position: relative;
+		top: 10px;
+		text-align: center;
+		font: 400 40px/0.8 'Dancing Script', cursive, Helvetica, sans-serif;
+		text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+		line-height: 10%;		/*verändert den Zeilenabstand zum vorherigen*/
+	}
+	
+	svg {
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+		height: 100px;
+	}
+	
+	.contact {
+		position: fixed;
+		top: 250px;
+		right: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		height: 200px;
+		/*border: 5px solid green;*/
+	}
+	
+	.contact img {
+		position: relative;
+		top: 100px;
+		height: 70px;
+		width: 70px;
+		margin-bottom: 30px;
+		text-align: right;
+	}
+	
+	.contact p {
+		position: absolute;
+		top: 23px;
+		right: 17px;
+		font: 400 25px/0.8 'Dancing Script', cursive, Helvetica, sans-serif;
+		text-align: right;
+	}
+	
+	#certi_heading {
+		position: absolute;
+		white-space: nowrap;
+		width: 500px;
+		left: 850px; /*?????????????????????????????????How can I move this to the center without using left? (with "left" it's obviously not staying in the center when zooming)*/
+		top: 275px;
+		border-radius: 80px;
+		margin: 0px auto;
+		background-image: linear-gradient(hsla(215, 30%, 70%, 0.9) 0%, hsla(215, 30%, 70%, 0) 50%, hsla(215, 30%, 70%, 0.9) 100%), linear-gradient(to right, hsla(215, 30%, 80%, 0.8) 30%, white 50%, hsla(215, 30%, 80%, 0.8) 70%);
+		padding: 20px;
+		text-align: center;
+		font: 400 70px/0.8 'Dancing Script', cursive, Helvetica, sans-serif;
+		font-weight: bold;
+		/*border: 5px solid green;*/
+	}
+	/*?????????In general: what's a good practise using positon aboslute/relative? When should I use what? I thought that it's a good approach to always put the divs/main divs to absolute and then everything else like img, p etc.ie p, img etc to relative? But then some things only seem to work in either relative or absolute.. */
+	
+	.certi {
+		position: absolute;
+		display: flex;
+		flex-wrap: wrap;
+		width: 100vw;
+		top: 600px;
+		border: 5px solid green;
+	}
+	
+	.certi div {
+		display: flex;
+		flex-direction: row;
+		font-family: Garamond;
+		line-height: 150%;
+	}
+	
+	.certi h2 {
+		/*?????????????????????????????????? Is there a way to adapt the size of the "background-box" according to how much room the heading needs? Like here the TRIZ has a 2nd line so the blue box around it also needs to be bigger (its more a general question as this would be very useful. For now I found a workaround by giving the Triz heading some extra attention:D*/
+		position: relative;
+		height: 20px;
+		top: 20px;
+		white-space: nowrap;
+		left: 0px;
+		/*why is this not the same left -250 like in certi p???*/
+		border-radius: 80px;
+		margin: 0px auto;
+		background-image: linear-gradient(hsla(215, 30%, 70%, 0.9) 0%, hsla(215, 30%, 70%, 0) 50%, hsla(215, 30%, 70%, 0.9) 100%), linear-gradient(to right, hsla(215, 30%, 80%, 0.8) 30%, white 50%, hsla(215, 30%, 80%, 0.8) 70%);
+		padding: 20px;
+		text-align: center;
+		/*font: 400 20px/0.8 'Dancing Script', cursive, Helvetica, sans-serif;*/
+		font-weight: bold;
+	}
+	
+	
+	.cTriz h2{
+position: relative;
+		height: 40px;
+	}
+	
+	.certi p {
+		position: relative;
+		margin-top: 50px;
+		top: 30px;
+		/*display:flex;
+		flex-direction: column;
+		align-items:flex-start;*/
+		/*Nothing seems to be working with this p thing here. I pretty much just want to move theses boxes under the heading and next to the pictures*/
+		
+		width: 60vw;
+		height: 30%;
+		font-size: 20px;
+		background-image: linear-gradient(hsla(215, 30%, 70%, 0.9) 0%, hsla(215, 30%, 70%, 0.5) 50%, hsla(215, 30%, 70%, 0.9) 100%), linear-gradient(to right, hsla(215, 30%, 80%, 0.8) 30%, white 50%, hsla(215, 30%, 80%, 0.8) 70%);
+		padding: 10px;
+		font-family: Garamond;
+		border-radius: 30px;
+		border: 5px solid blue;
+	}
+	
+	.certi img {
+		width: 25vw;
+		margin: 20px;
+	}
+	
+/*?????????????this is a big mess here.. I want them to line up next to each other just unter the certificates heading.. It looks like it doesnt understand any of the flex features I am trying to set..*/	
+	
+	.certi_small {
+			position: absolute;
+	top:300px;
+	left:40vw;
+	displey:flex;
+	flex-direction: column;
+	flex-wrap=nowrap; /*single line */
+	justify-content: center; /* centers it in axis of row*/
+		
+	border: 5px solid pink;
+	
+	}
+	
+	.certi_small img {
+		width: 100px;
+	}
+	
+	.certi_small div{
+		border: 5px solid green;
+			}
+	
+	
+	/*??????????????????Here I want to get the pictures to appear in a full screen size in the center of the page*/
+	.certi img:hover {
+		position: absolute;
+		transform: scale(2);
+		/*background-position: 700px 100vw;*//*doenst work*/
+		border-radius: 20px;
+		z-index: 1;
+	}
+	</style>
+</head>
+
+
+<body>
+<header>
+	<div class="menu">
+		<ul>
+			<li> <a href="./Aboutme.html">About me</a> </li>
+			<li> <a href="./CV.html">CV</a> </li>
+			<li> <a href="./Certificates.html">Certificates</a> </li>
+			<li> <a href="#Portfolio">Portfolio</a> </li>
+			<li> <a href="./Contact.html">Contact me</a> </li>
+		</ul>
+	</div>
+</header>
+
+	<div class="welcome">
+		<h2><strong >Tina Schickle</strong></h2>
+		<p> Welcome to my website and thank you for dropping by </p>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+			<circle fill="white" cx="0" cy="100" r="100" />
+			<circle fill="white" cx="200" cy="100" r="100" /> </svg>
+	</div>
+	
+	
+	
+	<div class="certi_small">
+	
+	<!--<h2>Quick access</h2> -->
+		
+<div class="1">
+		<a href="#sBachelor"><img id="Bachelor" src="Bachelor1.jpg" alt="not found"></a>
+		<p>Mechanical Engineering</p>
+</div>		
+
+<div class="2">		
+		<a href="#sUdemy"> <img id="Udemy" src="JavaScript_Udemy.jpg" alt="not found"></a>
+		<p>JavaScript Course</p>
+</div>
+
+<div class="3">
+		<a href="#sTriz"><img id="Triz" src="Triz.jpg" alt="not found"></a>
+		<p>TRIZ Practitioner</p>
+</div>		
+		
+<div class="4">		
+		<a href="#sCode1"><img id="Code1" src="Code1.jpg" alt="not found"></a>
+		<p>Responsive Web Design</p>
+</div>	
+	
+	</div>
+	
+	
+	
+	<h1 id="certi_heading" style="text-align: center;">Certificiates</h1>
+	<div class="certi">
+		<div class="cBachelor"> <img id="sBachelor" src="Bachelor1.jpg" alt="not found">
+			<h2>Mechanical Engineering (Bachelor of Science)</h2>
+			<p>I completed my mechanical engineering degree in 3.5 years.
+				<br> A degree I am very proud of. Through enormous ambition and perseverance, I managed to pass every exam straight away. In that time I was able to absorb a lot of technical knowledge. My studies have helped me to develop my ability to think complexly and to quickly familiarise myself with new topics.
+				<br> View <a href="Bachelor.pdf" target="popup">diploma</a></p>
+		</div>
+		<div class="cUdemy"> <img id="sUdemy" src="JavaScript_Udemy.jpg" alt="not found">
+			<h2>Complete JavaScript Course </h2>
+			<p> In 319 well-structured video lessons of a total of 69 hours, I was able to build a good foundation for working with JavaScript. Besides learning many functionalities and skills of the programming language, I was able to apply my knowledge in various small projects (-> Have a look at my <a href="./Portfolio.html"> Portfolio)</a> </p>
+		</div>
+		<div class="cTriz"> <img id="sTriz" src="Triz.jpg" alt="not found">
+			<h2>TRIZ Practitioner(Theory of Inventive Problem Solving) <br>
+	 "International TRIZ Association" (MATRIZ)</h2>
+			<p>"becoming three times more creative with technical problems and being able to systematically generate innovations"(TRIZ-Master: Robert Adunca)
+				<br> The Triz seminar taught me valuable and useful tools to work out solutions in an innovative way. </p>
+		</div>
+		<div class="cCode1"> <img id="sCode1" src="Code1.jpg" alt="not found">
+			<h2>Responsive Web Design</h2>
+			<p>In the course (approx. 300 hours), I acquired relevant knowledge of HTML. In addition to many explanations, I also had to complete some coding exercises.</p>
+		</div>
+	</div>
+	<div class="contact">
+		<p>Let's talk!</p>
+		<a href="./Contact.html"><img id="whatsapp" name="whatsapp" src="whatsapp.png" alt="not found"></a>
+		<a href="./Contact.html"><img id="email" name="email" src="email.png" alt="not found"></a>
+		<a href="./Contact.html"><img id="call" name="call" src="telefon3.png" alt="not found"></a>
+		<a href="./Contact.html"><img id="linkedin" name="linkedin" src="linkedin.png" alt="not found"></a>
+	</div>
+</body>
+
+</html>

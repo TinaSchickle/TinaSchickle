@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title> Tina Schickle </title>
+
+		<style>
+		
+		
+		@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&display=swap');
+		
+		body {
+ 	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	bottom: 0px;
+  	right: 0px;
+  	height: 100vw;
+	background-image: url('backy.jpg');
+	background-attachment: fixed; /*make sure the entire element is always covered*/
+	background-size: cover;/* image to cover the entire element*/
+	background-repeat: no-repeat;
+				}
+		
+	 
+
+					
+	.menu{
+	background-color: #ff9d2f;
+	top: 0px;
+	height: 60px;
+	width: 100%;
+	right: 0px; /*moves entire navbar to the right*/
+	align-self: left;
+	position: fixed; /*fixiert die Leiste , sodass sie auch beim Scrollen nicht verschwindet*/
+	z-index:2; /* Damit das Untermenü immer über all den anderen Elementen ist */
+	margin:0px;
+	padding: 0px;
+	
+
+	}
+
+	.menu ul {
+		
+	list-style-type: none; / /* Entfernt die Auflistungszeichen der Links im Menü */
+	  /* richtet Text nebeneinander statt untereinander aus */
+	overflow: auto; /* sollte kein Platz für das Wort sein, fügt es scroll Funktion hinzu*/
+	font-size: auto;
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+	padding: 5px;
+	margin: 5px;
+	
+	}
+		
+	
+	
+.menu li a {
+		display: block; /*macht ges. Linkbereich klickbar und nicht nur den Text*/
+		color: white;
+		text-decoration: none; /* Entfernt das Unterstreichen der Links im Menü */
+		padding: 5px 10px 5px 10px;
+	}	
+	
+.menu li a:hover {
+		background-color: #23699c;
+	}
+	
+	
+	
+.welcome{
+	position:relative;
+	/*display: inline-block;*/
+	height: 220px;
+		top: 0px;
+
+	
+	
+ }
+	
+
+	
+.welcome h2 {
+		position: relative;
+		text-align: center;
+		font-size: 50px;
+		text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+		top: 20px;
+		z-index: 1;
+	}
+	
+	.welcome p {
+		position: relative;
+		top: -5px;
+		text-align: center;
+		font: 400 40px/0.8 'Dancing Script', cursive, Helvetica, sans-serif;
+		text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+		line-height: 10%;		/*verändert den Zeilenabstand zum vorherigen*/
+		z-index: 1;
+	}
+
+.welcome img{
+/*?????????????other then the text the picture is static now..->how can I make the img responsive to zooming in and out of the website*/
+	position: relative;
+	width:100vw;  /*??????????????????????no matter what I try (100vw, 1500px)or left:0px it wouldnt go all the way to the left like the navigation bar does - there is always this little gab on the left*/
+	top:-200px; /*?????????????why can I only make this line up to the navbar by using a minus value*/
+	margin: 0px auto;
+	/*border: 5px solid blue*/}
+
+
+/*?????????????how can I make this side bar on the right with the contact symbols be static so that the symbols don't disappear when zooming in?*/
+.contact{
+	position: fixed;
+	top: 250px;
+	right: 20px;
+	display: flex;
+	flex-direction: column;
+   align-items: flex-end;
+   height: 200px;
+   justify-content: space-between;
+   height: 200px;
+/*border: 5px solid green;*/
+}
+
+.contact img{
+	position: relative;
+	top: 100px;
+	height: 70px;
+	margin-bottom: 30px;
+	text-align: right;
+}
+.contact p{
+	position: absolute;
+	top:23px;
+	right:17px;
+	font: 400 25px/0.8 'Dancing Script', cursive, Helvetica, sans-serif;
+	text-align: right;
+			}
+
+
+
+.portfolio{
+border: 5px solid green;
+position:absolute;
+left:2vw;
+display:flex;
+flex-direction:column;
+width: 90vw;
+
+}
+
+.portfolio div{
+border: 5px solid blue;
+position:relative;
+height:400px;
+
+display:flex;
+flex-direction:row;
+background: rgb(114,174,73);
+background: linear-gradient(90deg, rgba(114,174,73,1) 8%, rgba(112,214,41,0.4) 80%);
+border-radius: 20px;
+
+}
+
+.portfolio a{
+	position: relative;
+	left: 500px;
+	top: 20px;
+	height: 20px;
+	padding: 20px;
+	white-space: nowrap;
+	border: 5px solid blue;
+	border-radius: 80px;
+		margin: 0px auto;
+		background-image: linear-gradient(hsla(215, 30%, 70%, 0.9) 0%, hsla(215, 30%, 70%, 0) 50%, hsla(215, 30%, 70%, 0.9) 100%), linear-gradient(to right, hsla(215, 30%, 80%, 0.8) 30%, white 50%, hsla(215, 30%, 80%, 0.8) 70%);
+		text-align: center;
+		font-family: Garamond;
+		font-size: 30px;
+	font-weight: bold;}
+
+
+.portfolio img{
+position:relative;
+top: 80px;
+width:500px;
+height: 250px;
+left: -600px; /*????????????why do I need to apply minus here?*/
+object-fit:contain;
+}
+
+
+.portfolio p {
+		position: relative;
+		margin-top: 50px;
+		top: 80px;
+		width: 60vw;
+		height: 30%;
+		font-size: 20px;
+		background-image: linear-gradient(hsla(215, 30%, 70%, 0.9) 0%, hsla(215, 30%, 70%, 0.5) 50%, hsla(215, 30%, 70%, 0.9) 100%), linear-gradient(to right, hsla(215, 30%, 80%, 0.8) 30%, white 50%, hsla(215, 30%, 80%, 0.8) 70%);
+		padding: 10px;
+		font-family: Garamond;
+		border-radius: 30px;
+		border: 5px solid blue;
+	}
+	
+
+
+		</style>
+
+	</head>
+	
+	
+<header>
+<div class="menu">
+	<ul >							
+										<li>
+											<a href="./Aboutme.html">About me</a>
+										</li>
+									 	<li>
+											<a href="./CV.html">CV</a>
+										</li>
+										<li>
+											<a href="./Certificates.html">Certificates</a>
+										</li>
+										<li>
+											<a href="./Portfolio.html">Portfolio</a>
+										</li>
+										
+										<li>
+											<a href="./Contact.html">Get in touch</a>
+										</li>
+	</ul>
+	
+</div>
+
+
+
+</header>	
+	
+	
+	
+	
+	
+<body>
+
+<div class="welcome">
+<h2><strong >Tina Schickle</strong></h2>
+<p>Welcome to my website and thank you for dropping by</p>
+
+<img src="wel.png" alt="not found">
+  
+</div>
+
+
+		
+<div class="portfolio">
+
+<div class="guess">
+<a href="guess/guessnumber.html" target="_blanc">Guess Number</a> 
+<img src="guess/guess.png" alt="guessmynumber">
+<p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p>
+</div>
+
+<div class="piggame">
+<a href="piggame/pig.html" target="_blanc">Piggame</a> 
+<img src="piggame/pig.png" alt="piggame">
+<p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p>
+</div>
+
+<div class="bank">
+<a href="bank/bank.html" target="_blanc">Bank</a> 
+<img src="bank/bank.png" alt="bankist app">
+<p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p>
+</div>
+
+<div class="bankist">
+<a href="bankist/bankist.html" target="_blanc">Bank</a> 
+<img src="bankist/bankist.png" alt="bankist website">
+<p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p>
+</div>
+
+<div class="mapty">
+<a href="mapty/mapty.html" target="_blanc">Bank</a> 
+<img src="mapty/mapty.png" alt="mapty">
+<p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p>
+</div>
+
+
+</div>
+	
+
+
+<div class="contact">
+
+<p>Let's talk!</p>
+<a href="./Contact.html"><img id="whatsapp" name="whatsapp" src="whatsapp.png" alt="not found"></a>
+<a href="./Contact.html"><img id="email" name="email" src="email.png" alt="not found"></a>
+<a href="./Contact.html"><img id="call" name="call" src="telefon3.png" alt="not found"></a>
+<a href="./Contact.html"><img id="linkedin" name="linkedin" src="linkedin.png" alt="not found"></a>
+
+</div>
+
+
+<!-- <div class="whenhovermenu">
+<img id="contactpic" name="contactpic" src="contactpic." alt="not found">
+
+</div> -->
+
+</body>
+
+</html>

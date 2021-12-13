@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tina Schickle</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&display=swap");
+
+      body {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        bottom: 0%;
+        right: 0%;
+        margin: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        background-image: url("backy.jpg");
+        background-attachment: fixed; /*make sure the entire element is always covered*/
+        background-size: cover; /* image to cover the entire element*/
+        background-repeat: no-repeat;
+        /* background-color: blue; */
+        z-index: 1;
+      }
+
+      .menu {
+        background-color: #ff9d2f;
+        top: 0;
+        /* height: 2em; */
+        height: 2vw;
+        max-width: 100vw;
+        right: 0; /*moves entire navbar to the right*/
+        /*align-self: left; */
+        position: fixed; /*fixiert die Leiste , sodass sie auch beim Scrollen nicht verschwindet*/
+        z-index: 4; /* Damit das Untermenü immer über all den anderen Elementen ist */
+        margin: 0;
+        padding: 1em;
+        padding-bottom: 0.9em;
+        left: 0;
+        bottom: 0;
+      }
+
+      .menu ul {
+        list-style-type: none; /* Entfernt die Auflistungszeichen der Links im Menü */
+        /* richtet Text nebeneinander statt untereinander aus */
+        overflow: visible; /* sollte kein Platz für das Wort sein, fügt es scroll Funktion hinzu*/
+        display: flex;
+        justify-content: center;
+        font-size: 2vw;
+        padding: 0%;
+        margin: 0%;
+      }
+
+      .menu li a {
+        display: block; /*macht ges. Linkbereich klickbar und nicht nur den Text*/
+        color: white;
+        text-decoration: none; /* Entfernt das Unterstreichen der Links im Menü */
+        white-space: nowrap;
+        padding: 0.1em 1em;
+      }
+
+      .menu li a:hover {
+        background-color: #23699c;
+      }
+      /*
+            .welcome {
+              position: absolute;
+              top: 2rem;
+              right: 0%;
+              margin: 0%;
+              padding: 0%;
+              width: 100vw;
+              height: auto;
+                     display: flex;
+              flex-direction: column;
+            }
+
+            .welcome img {
+              position: relative;
+              width: 100vw;
+              height: auto;
+              margin: 0;
+              padding: 0%;
+
+
+            }
+
+            .welcome h2 {
+              position: absolute;
+              top: 25%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 3vw;
+              z-index: 3;
+              margin: 0;
+              padding: 0;
+            }
+
+            .welcome p {
+              position: absolute;
+              top: 45%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              height: auto;
+              margin: 0;
+              padding: 0;
+              text-align: center;
+              font: 400 2vw/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+              z-index: 3;
+
+            }
+      */
+      .contact {
+        position: fixed;
+        display: flex;
+        width: 6%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        bottom: 5%;
+        right: 0%;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        /* border: 5px solid green; */
+      }
+      .contact img {
+        position: relative;
+        top: 45%;
+        left: 17%;
+        height: auto;
+        width: 50%;
+        min-width: 30%;
+        max-height: 40%;
+        object-fit: "contain";
+        margin: 0;
+        padding: 10%;
+        text-align: right;
+        /* border: 5px solid blue; */
+      }
+
+      .contact p {
+        position: relative;
+        top: 0;
+        right: 40%;
+        height: auto;
+        width: 30%;
+        min-width: 10%;
+        max-height: 4%;
+        font: 400 2vw/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+        text-align: right;
+        /* border: 5px solid pink; */
+      }
+
+      @media only screen and (max-width: 600px) {
+        .contact {
+          position: fixed;
+          bottom: 35rem;
+        }
+      }
+
+      /* a:visited {
+        color: blue;
+      } */
+
+      /*----------------START OF CV---------------*/
+      /*-------------CV--------------------*/
+      .CV {
+        position: relative;
+        opacity: 0.95;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+        /* border: 4px solid red; */
+      }
+
+      .CV img {
+        position: relative;
+        top: 2.6rem;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: contain;
+        flex-wrap: nowrap;
+        /* border: 4px solid blue; */
+      }
+      /*-------------Download Button--------------------*/
+      .download {
+        position: fixed;
+        white-space: nowrap;
+        width: 15vw;
+        height: auto;
+        right: 2%;
+        top: 2vh;
+        border-radius: 2rem;
+        /* margin: 1.3vw; */
+        padding: 0.3rem;
+        text-align: center;
+        font: 400 2vw/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+        z-index: 6;
+        background-image: linear-gradient(
+            hsla(215, 30%, 70%, 0.9) 0%,
+            hsla(215, 30%, 70%, 0) 50%,
+            hsla(215, 30%, 70%, 0.9) 100%
+          ),
+          linear-gradient(
+            to right,
+            hsla(215, 30%, 80%, 0.8) 30%,
+            white 50%,
+            hsla(215, 30%, 80%, 0.8) 70%
+          );
+
+        /*border: 5px solid green;*/
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="../index.html">About me</a>
+          </li>
+          <li>
+            <a href="CV.html">CV</a>
+          </li>
+          <li>
+            <a href="Certificates.html">Certificates</a>
+          </li>
+          <li>
+            <a href="Portfolio.html">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="Contact.html">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--
+    <br />
+    <br />
+    <div class="welcome">
+      <img src="wel.png" alt="not found" />
+      <h2>Tina Schickle</h2>
+      <p>Welcome to my website and thank you for dropping by</p>
+    </div>-->
+    <div class="download">
+      <a
+        href="CV.pdf"
+        download="CV_Schickle"
+        target="_popup"
+        style="text-decoration: none"
+        >Download CV</a
+      >
+    </div>
+
+    <div class="CV">
+      <img id="page1" name="page1" src="0001.jpg" alt="not found" />
+      <img id="page2" name="page2" src="0002.jpg" alt="not found" />
+      <img id="page3" name="page3" src="0003.jpg" alt="not found" />
+      <img id="page4" name="page4" src="0004.jpg" alt="not found" />
+    </div>
+
+    <div class="contact">
+      <p>Let's talk!</p>
+      <a href="./Contact.html"
+        ><img id="whatsapp" name="whatsapp" src="whatsapp.png" alt="not found"
+      /></a>
+      <a href="./Contact.html"
+        ><img id="email" name="email" src="email.png" alt="not found"
+      /></a>
+      <a href="./Contact.html"
+        ><img id="call" name="call" src="telefon3.png" alt="not found"
+      /></a>
+      <a href="./Contact.html"
+        ><img id="linkedin" name="linkedin" src="linkedin.png" alt="not found"
+      /></a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tina Schickle</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&display=swap");
+
+      body {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        bottom: 0%;
+        right: 0%;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("backy.jpg");
+        background-attachment: fixed; /*make sure the entire element is always covered*/
+        background-size: cover; /* image to cover the entire element*/
+        background-repeat: no-repeat;
+
+        z-index: 1;
+      }
+
+      .menu {
+        background-color: #ff9d2f;
+        top: 0;
+        /* height: 2em; */
+        height: 2vw;
+        max-width: 100vw;
+        right: 0; /*moves entire navbar to the right*/
+        /*align-self: left; */
+        position: fixed; /*fixiert die Leiste , sodass sie auch beim Scrollen nicht verschwindet*/
+        z-index: 4; /* Damit das Untermenü immer über all den anderen Elementen ist */
+        margin: 0;
+        padding: 1em;
+        padding-bottom: 0.9em;
+        left: 0;
+        bottom: 0;
+      }
+
+      .menu ul {
+        list-style-type: none; /* Entfernt die Auflistungszeichen der Links im Menü */
+        /* richtet Text nebeneinander statt untereinander aus */
+        overflow: visible; /* sollte kein Platz für das Wort sein, fügt es scroll Funktion hinzu*/
+        display: flex;
+        justify-content: center;
+        font-size: 2vw;
+        padding: 0%;
+        margin: 0%;
+      }
+
+      .menu li a {
+        display: block; /*macht ges. Linkbereich klickbar und nicht nur den Text*/
+        color: white;
+        text-decoration: none; /* Entfernt das Unterstreichen der Links im Menü */
+        white-space: nowrap;
+        padding: 0.1em 1em;
+      }
+
+      .menu li a:hover {
+        background-color: #23699c;
+      }
+
+      .welcome {
+        position: absolute;
+        top: 2rem;
+        right: 0%;
+        margin: 0%;
+        padding: 0%;
+        width: 100vw;
+        height: auto;
+
+        /* border: 3px solid yellowgreen; */
+        display: flex;
+        flex-direction: column;
+      }
+
+      .welcome img {
+        position: relative;
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        padding: 0%;
+
+        /* border: 5px solid blue; */
+      }
+
+      .welcome h2 {
+        position: absolute;
+        /* padding-top: 0; */
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%); /*centers it*/
+        font-size: 3vw;
+        z-index: 3;
+        margin: 0;
+        padding: 0;
+      }
+
+      .welcome p {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%); /*centers it*/
+        height: auto;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font: 400 2vw/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+        /* text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1); */
+        z-index: 3;
+        /* border: 3px solid mediumvioletred; */
+      }
+
+      .contact {
+        position: fixed;
+        display: flex;
+        width: 6%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        bottom: 5%;
+        right: 0%;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        /* border: 5px solid green; */
+      }
+      .contact img {
+        position: relative;
+        top: 45%;
+        left: 17%;
+        height: auto;
+        width: 50%;
+        min-width: 30%;
+        max-height: 40%;
+        object-fit: "contain";
+        margin: 0;
+        padding: 10%;
+        text-align: right;
+        /* border: 5px solid blue; */
+      }
+
+      .contact p {
+        position: relative;
+        top: 0;
+        right: 40%;
+        height: auto;
+        width: 30%;
+        min-width: 10%;
+        max-height: 4%;
+        font: 400 2vw/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+        text-align: right;
+        /* border: 5px solid pink; */
+      }
+
+      @media only screen and (max-width: 600px) {
+        .contact {
+          position: fixed;
+          bottom: 35rem;
+        }
+      }
+      /* a:visited {
+        color: blue;
+    
+      } */
+      /*------------START PORTFOLIO----------*/
+
+      /*--------------HEADING "CERTIFICATION"-----------------*/
+
+      .pheading {
+        position: relative;
+        /* width: 50vw; */
+        padding-top: 16%;
+        z-index: 2;
+        /* border: 5px solid green; */
+      }
+
+      #port_heading {
+        position: relative;
+        width: 50vw;
+        padding: 1rem;
+        border-radius: 2rem;
+        margin: 0 auto;
+        white-space: nowrap;
+        text-align: center;
+        font: 400 2.5vw/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+        background-image: linear-gradient(
+            hsla(215, 30%, 70%, 0.9) 0%,
+            hsla(215, 30%, 70%, 0) 50%,
+            hsla(215, 30%, 70%, 0.9) 100%
+          ),
+          linear-gradient(
+            to right,
+            hsla(215, 30%, 80%, 0.8) 30%,
+            white 50%,
+            hsla(215, 30%, 80%, 0.8) 70%
+          );
+        /* border: 5px solid green; */
+      }
+
+      /* -----------------SMALL CONTAINER AT THE TOP----------------  */
+      .port_small {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        text-align: center;
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+
+        height: auto;
+        margin-top: 2rem;
+        padding-bottom: 2.5rem;
+        /* border: 5px solid pink; */
+      }
+
+      /*----------IMG AND P IN SMALL CONTAINER AT TOP----------*/
+
+      .port_small img {
+        width: 11vw;
+      }
+
+      .port_small p {
+        position: absolute;
+        padding: 0.5rem;
+        white-space: nowrap;
+        background-image: linear-gradient(
+            hsla(215, 30%, 70%, 0.9) 0%,
+            hsla(215, 30%, 70%, 0) 50%,
+            hsla(215, 30%, 70%, 0.9) 100%
+          ),
+          linear-gradient(
+            to right,
+            hsla(215, 30%, 80%, 0.8) 30%,
+            white 50%,
+            hsla(215, 30%, 80%, 0.8) 70%
+          );
+        width: 10vw;
+        border-radius: 0.5rem;
+        height: 1rem;
+        font: 400 1.2vw/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+      }
+
+      /*------- @MEDIA FOR P IN SMALL CONTAINER AT TOP------------*/
+      @media screen and (max-width: 600px) {
+        .port_small p {
+          height: 0.1rem;
+        }
+      }
+
+      /*------------ HEADING TEXT AT TOP "LONGTEXT"----------*/
+      .longtext {
+        position: relative;
+
+        padding: 1rem;
+        width: 85vw;
+        max-height: 20vw;
+        margin: auto;
+        margin-top: 1rem;
+
+        padding: 0.5rem;
+
+        font-family: Garamond;
+        font-size: 1vw;
+        font-weight: 800;
+        -webkit-text-stroke-width: 0.1px;
+        -webkit-text-stroke-color: black;
+        color: rgb(41, 38, 38);
+
+        border-radius: 1rem;
+        border-bottom: 2px dashed rgb(23, 0, 128);
+        border-top: 2px dashed rgb(23, 0, 128);
+        overflow: auto;
+        z-index: 3;
+
+        background-image: linear-gradient(
+            hsla(215, 30%, 70%, 0.9) 0%,
+            hsla(215, 30%, 70%, 0) 50%,
+            hsla(215, 30%, 70%, 0.9) 100%
+          ),
+          linear-gradient(
+            to right,
+            hsla(215, 30%, 80%, 0.8) 30%,
+            white 50%,
+            hsla(215, 30%, 80%, 0.8) 70%
+          );
+      }
+
+      /*------------ @MEDIA HEADING AT TOP----------*/
+      @media screen and (max-width: 1200px) {
+        .portfolio h2 {
+          font-size: 1.5rem;
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        .portfolio h2 {
+          font-size: 1rem;
+        }
+      }
+
+      /*------------ ENTIRE PORTFOLIO CONTAINER----------*/
+      .portfolio {
+        position: relative;
+        top: 0rem;
+        width: 95vw;
+        height: auto;
+        margin-left: 3%;
+        /* border: 3px solid green; */
+      }
+      /*------------ @MEDIA ENTIRE PORTFOLIO CONTAINER----------*/
+      /* @media screen and (max-width: 1000px) {
+         .portfolio {
+
+           top: 8%;
+         }
+       } */
+
+      /*------------ SINGLE DIVS ( with img,p and a) ----------*/
+      .portfolio div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        text-align: center;
+        position: relative;
+        /* top: 12.8rem; */
+        height: 25vw;
+
+        background: rgba(212, 204, 201, 0.6);
+      }
+
+      /* @media screen and (max-width: 800px) {
+         .portfolio div {
+           top: 8rem;
+         }
+       } */
+
+      /*------------ IMAGES AND TEXT ----------*/
+
+      .portfolio img {
+        position: relative;
+        height: auto;
+        max-width: 35%;
+        object-fit: contain;
+
+        /* border: 4px solid purple; */
+      }
+
+      /*------------ LINKED HEADING IN THE MIDDLE----------*/
+
+      .portfolio a {
+        position: relative;
+        left: 3rem;
+        top: 40%;
+        height: 2vh;
+        min-width: 12vw;
+        max-height: 2vh;
+        padding: 1rem;
+        white-space: nowrap;
+        border-radius: 4rem;
+        border: 2px solid grey;
+        padding-bottom: 2rem;
+        text-align: center;
+        font-family: Garamond;
+        font-size: 1.6rem;
+        font-weight: 1000;
+        color: black;
+        background-image: url(bluebacky.png);
+      }
+      /*------------ @MEDIA FOR LINK IN MIDDLE----------*/
+      @media screen and (max-width: 1200px) {
+        /*1200 or smaller*/
+        .portfolio a {
+          font-size: 1rem;
+          rotate: -90deg;
+          max-height: 6vh;
+          padding: 0.5rem;
+          left: 0.5rem;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        .portfolio a {
+          font-size: 0.4rem;
+          font-weight: 700;
+          white-space: normal;
+          rotate: -90deg;
+          min-width: 10vw;
+          max-height: 2vh;
+          padding: 0.1rem;
+          left: 0.2rem;
+        }
+      }
+
+      /*------------ TEXT BOX----------*/
+      .portfolio p {
+        position: relative;
+        background-image: url(w2.png);
+        color: rgb(19, 17, 17);
+        font-weight: 500;
+        margin: auto; /*adapts container size to text content*/
+        min-width: 20vw;
+        max-width: 35vw;
+        min-height: 20%; /*to adapt div to text content*/
+        max-height: 18vw;
+        padding: 1rem;
+        overflow: auto;
+        font-family: Garamond;
+        font-size: 1.45rem;
+        border-radius: 2rem;
+        object-fit: contain;
+        overflow: auto;
+        border: 2px solid grey;
+        text-align: left;
+        /* border: 5px solid blue; */
+      }
+
+      /*------------ @MEDIA TEXT BOX----------*/
+      @media screen and (max-width: 1200px) {
+        .portfolio p {
+          /*1200 or smaller*/
+          max-width: 40vw;
+          /* font-size: 1rem; */
+          max-height: 14vh;
+          right: 1.5rem;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .portfolio p {
+          /*1200 or smaller*/
+          max-width: 70%;
+          font-size: 1rem;
+          max-height: 50%;
+          right: 0rem;
+          font-size: 0.8rem;
+          border-radius: 0.2rem;
+          padding: 0.2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="../index.html">About me</a>
+          </li>
+          <li>
+            <a href="CV.html">CV</a>
+          </li>
+          <li>
+            <a href="Certificates.html">Certificates</a>
+          </li>
+          <li>
+            <a href="Portfolio.html">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="Contact.html">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <br />
+    <br />
+    <div class="welcome">
+      <img src="wel.png" alt="not found" />
+      <h2>Tina Schickle</h2>
+      <p>Welcome to my website and thank you for dropping by</p>
+    </div>
+
+    <div class="pheading"><h1 id="port_heading">Portfolio</h1></div>
+
+    <div class="port_small">
+      <div class="p1">
+        <a href="#guess"
+          ><img id="pGuess" src="guess/guess.png" alt="not found"
+        /></a>
+        <p>Guess number</p>
+      </div>
+
+      <div class="p2">
+        <a href="#piggame">
+          <img id="pPiggame" src="piggame/pig.png" alt="not found"
+        /></a>
+        <p>Pig game</p>
+      </div>
+
+      <div class="p3">
+        <a href="#bank"
+          ><img id="pBank" src="bank/bank.png" alt="not found"
+        /></a>
+        <p>Bank account</p>
+      </div>
+
+      <div class="p4">
+        <a href="#bankist"
+          ><img id="pBankist" src="bankist/bankist.png" alt="not found"
+        /></a>
+        <p>Bankist App</p>
+      </div>
+
+      <div class="p4">
+        <a href="#mapty"
+          ><img id="pMapty" src="mapty/mapty.png" alt="not found"
+        /></a>
+        <p>Mapty</p>
+      </div>
+    </div>
+
+    <div class="longtext">
+      <h2>
+        I created most of the follwing projects in my JavaScript Course. The
+        HTML and CSS files were already provided, but everything done with
+        JavaScript was fully implemented by myself. The focus of the course was
+        to develop my confidence using JS to build interactive websites. Feel
+        free to click on the headings in the middle to take a closer look at the
+        application.
+      </h2>
+    </div>
+
+    <div class="portfolio">
+      <div id="guess">
+        <img src="guess/guess.png" alt="guessmynumber" />
+        <a href="guess/guessnumber.html" target="_blanc">Guess Number</a>
+
+        <p>
+          This game project was about getting to know DOM-Manipulation, handling
+          click events and implementing the game logic using JavaScript.
+        </p>
+      </div>
+
+      <div id="piggame">
+        <img src="piggame/pig.png" alt="piggame" />
+        <a href="piggame/pig.html" target="_blanc">Pig game</a>
+
+        <p>
+          This exercise taught me me how to assign actions to the buttons,
+          ensuring everything works according to the game rules.
+        </p>
+      </div>
+
+      <div id="bank">
+        <img src="bank/bank.png" alt="bankist app" />
+        <a href="bank/bank.html" target="_blanc">Bank account</a>
+
+        <p>
+          This was one of my favorite projects and also the one where I probably
+          learned the most. It's a bank application with all the common features
+          such as log in, transfer, deposit, load request, display balance,
+          dates, automatic check out and so on.
+          <br />
+          I created 2 fake user for you to check it out: <br />
+          <strong>user 1:</strong> js pw:1111 & <strong>user 2:</strong> jd
+          pw:2222
+        </p>
+      </div>
+
+      <div id="bankist">
+        <img src="bankist/bankist.png" alt="bankist website" />
+        <a href="bankist/bankist.html" target="_blanc">Bankist App</a>
+
+        <p>
+          The bankist application was a great project to practice 'loading speed
+          optimization' (e.g.: lazy loading of pictures) and dynamic effects.
+          This being said all the "fading in sections", the slider component at
+          the bottom with dots and arrows etc. are made using JS.
+        </p>
+      </div>
+
+      <div id="mapty">
+        <img src="mapty/mapty.png" alt="mapty" />
+        <a href="mapty/mapty.html" target="_blanc">Mapty</a>
+
+        <p>
+          Mapty is an application that tracks your running and cycling history.
+          It uses geolocation, external libraries and saving data to the
+          browser.
+        </p>
+      </div>
+    </div>
+
+    <div class="contact">
+      <p>Let's talk!</p>
+      <a href="Contact.html"
+        ><img id="whatsapp" name="whatsapp" src="whatsapp.png" alt="not found"
+      /></a>
+      <a href="Contact.html"
+        ><img id="email" name="email" src="email.png" alt="not found"
+      /></a>
+      <a href="Contact.html"
+        ><img id="call" name="call" src="telefon3.png" alt="not found"
+      /></a>
+      <a href="Contact.html"
+        ><img id="linkedin" name="linkedin" src="linkedin.png" alt="not found"
+      /></a>
+    </div>
+  </body>
+</html>

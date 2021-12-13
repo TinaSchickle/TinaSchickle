@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title> Tina Schickle - Contact </title>
+
+		<style>
+		
+		
+		@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&display=swap');
+		
+		body {
+ 	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	bottom: 0px;
+  	right: 0px;
+  	height: 50vw;
+	background-image: url('backy.jpg');
+	background-attachment: fixed; /*make sure the entire element is always covered*/
+	background-size: cover;/* image to cover the entire element*/
+	background-repeat: no-repeat;
+				}
+		
+	 
+
+					
+	.menu{
+	background-color: #ff9d2f;
+	top: 0px;
+	height: 60px;
+	width: 100%;
+	right: 0px; /*moves entire navbar to the right*/
+	align-self: left;
+	position: fixed; /*fixiert die Leiste , sodass sie auch beim Scrollen nicht verschwindet*/
+	z-index:1; /* Damit das Untermenü immer über all den anderen Elementen ist */
+	margin:0px;
+	padding: 0px;
+	
+
+	}
+
+	.menu ul {
+		
+	list-style-type: none; / /* Entfernt die Auflistungszeichen der Links im Menü */
+	  /* richtet Text nebeneinander statt untereinander aus */
+	overflow: auto; /* sollte kein Platz für das Wort sein, fügt es scroll Funktion hinzu*/
+	font-size: auto;
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+	padding: 5px;
+	margin: 5px;
+	
+	}
+		
+	
+	
+.menu li a {
+		display: block; /*macht ges. Linkbereich klickbar und nicht nur den Text*/
+		color: white;
+		text-decoration: none; /* Entfernt das Unterstreichen der Links im Menü */
+		padding: 5px 10px 5px 10px;
+	}	
+	
+.menu li a:hover {
+		background-color: #23699c;
+	}
+	
+	
+	
+.welcome{
+	position:relative;
+	/*display: inline-block;*/
+	height: 220px;
+	background-image: linear-gradient(#ff9d2f, #ff6126);
+	top: 0px;
+	
+ }
+	
+
+	
+.welcome h2{
+	 position: relative;
+	 text-align: center;
+	 font-size: 50px;
+ 	 text-shadow: 4px 4px 3px rgba(0,0,0,0.1);  
+	 top: 20px;
+	}
+	
+.welcome p{
+		position: relative;
+		top: 10px;
+		text-align: center;
+		font: 400 40px/0.8 'Dancing Script', cursive, Helvetica, sans-serif;
+   		 text-shadow: 4px 4px 3px rgba(0,0,0,0.1);  
+   		 line-height: 10%; /*verändert den Zeilenabstand zum vorherigen*/
+   		 }
+
+svg {
+ 	position: absolute;
+ 	bottom: 0px;
+  	width: 100%;
+  	height: 100px;
+
+ 
+}
+
+
+.contact{
+	position: fixed;
+	top: 250px;
+	right: 20px;
+	display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: space-between;
+   height: 200px;
+
+}
+
+.contact img{
+position: relative;
+top: 100px;
+height: 70px;
+width: 70px;
+margin-bottom: 30px;
+text-align: right;
+}
+
+.contact p{
+position: absolute;
+top:23px;
+right:17px;
+font: 400 25px/0.8 'Dancing Script', cursive, Helvetica, sans-serif;
+text-align: right;
+			}
+			
+			
+/* ab hier neu für contact seite!!! */
+/*???????????????????how can I make this responsive, so that its always central to the page?*/
+.contactdetails{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items : stretch;
+	top: 250px;
+	height: 900px;
+	width: 100vw;  
+	/*border: 5px solid green;*/
+	margin: 0px auto;
+	text-align: center;
+	font: 400 30px/0.8 'Dancing Script', cursive, Helvetica, sans-serif;
+	border: 5px solid blue;
+}
+
+.contactdetails h1{
+	position: absolute;
+	white-space: nowrap;
+	width: 900px;
+	border-radius: 80px;
+	font-size: 70px;
+	/*background-color: rgba(212, 214, 212,0.7)*/
+	background-image: 
+    linear-gradient(hsla(215,30%,70%,0.9) 0%, hsla(215,30%,70%,0) 50%, hsla(215,30%,70%,0.9) 100%), 
+    linear-gradient(to right, hsla(215,30%,80%,0.8) 30%, white 50%, hsla(215,30%,80%,0.8) 70%);
+    padding: 20px;
+}
+
+
+.contactdetails div{
+	position: relative;
+	top: 20px;
+	left: -80px; /*??????????????how do I get this div to be in the center without using left? And why do I have to use minus here instead of normal plus?*/
+	width: 300px;
+	max-width: 25vw; /*????????????????I dont think this is doing anything at the Moment? I want the entire box to stop getting bigger at a certain point..*/
+	height: 350px;
+	align-self: center;
+	border: 5px solid grey;
+	font-size: 40px;
+	padding: 60px;
+	border-radius: 60px;
+	background-image: 
+    linear-gradient(hsla(215,30%,70%,0.9) 0%, hsla(215,30%,70%,0) 50%, hsla(215,30%,70%,0.9) 100%), 
+    linear-gradient(to right, hsla(215,30%,80%,0.8) 30%, white 50%, hsla(215,30%,80%,0.8) 70%);
+}
+
+
+
+.link { /*verlinkter Text unterm Bild*/
+	position: absolute;
+	top:375px;
+	text-align:center; /* ??????????????why is text not going to the center????? */
+	font-family: Calibri ;
+	transition: transform .5s ease; /* schöneres rauszoomen bei hover*/
+	white-space: nowrap;
+	left:45px;
+}
+
+.ctext{ /*text über dem Bild*/
+	position:relative;
+	margin-top: 2px;
+	text-align: center;
+white-space: nowrap;
+font-size: 45px;
+}
+
+.contactdetails img{
+	position:relative;
+	top:10px;
+}
+			
+	
+.link:hover {
+/*????????????????????I want the left(number) and right(linkedin) to  move to the left/right when hovering over it, so that It doesnt cut off the text*/
+position: absolute;			
+		transform: scale(2);
+
+		background-color: hsla(215,30%,70%,0.8);
+
+		border-radius: 20px;
+		text-decoration: none;		
+		z-index: 1;
+	}
+	
+ 	
+	
+	.link a:hover {
+	/*???????????the only reason I need this block hier is to remove the line from the links..feels like it's not good practise doing it this way? */
+		position: relative;		
+		transform: scale(2);
+		
+		/*transform: translateY(50%)*/
+		background-color: hsla(215,30%,70%,0.8);
+			border-radius: 20px;
+		text-decoration: none;		
+		z-index: 1;
+		text-align: center;
+		
+	}
+		
+			
+			
+		</style>
+
+	</head>
+	
+	
+<header>
+<div class="menu">
+	<ul >							
+										<li>
+											<a href="./Aboutme.html">About me</a>
+										</li>
+									 	<li>
+											<a href="./CV.html">CV</a>
+										</li>
+										<li>
+											<a href="./Certificates.html">Certificates</a>
+										</li>
+										<li>
+											<a href="#Portfolio">Portfolio</a>
+										</li>
+										
+										<li>
+											<a href="./Contact.html">Get in touch</a>
+										</li>
+	</ul>
+	
+</div>
+
+
+
+</header>	
+	
+	
+	
+	
+	
+<body>
+
+<div class="welcome">
+<h2><strong >Tina Schickle</strong></h2>
+<p> Welcome to my website and thank you for dropping by/visiting </p>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+    <circle fill="white" cx="0" cy="100" r="100" />
+    <circle fill="white" cx="200" cy="100" r="100" />
+  </svg>
+  
+</div>
+
+
+		
+<div class="contactdetails">
+<h1> Contact details </h1>
+
+
+<div id="dwhatsapp">
+<p class="ctext">Text me on Whatsapp</p>
+<p class="link"><a href="https://wa.me/4915155549489"  target="_blank">+4915155549489</a></p>
+<a href="https://wa.me/4915155549489" target="_blank"> <img id="cwhatsapp" name="whatsapp" src="whatsapp.png" alt="not found"></a>
+</div>
+
+<div id="demail">
+<p class="ctext">Send me an Email</p>
+<p class="link"><a href= "mailto:tina.schickle@gmail.de"  target="_blank">tina.schickle@gmx.de</a></p>
+<a href= "mailto:tina.schickle@gmail.de" target="_blank"> <img id="cemail" name="email" src="email.png" alt="not found"></a>
+</div>
+
+<div id="dcall">
+<p class="ctext">Give me a call </p>
+<p class="link"><a href="tel:004915155549489" target="_blank">+49 151 555 49489</a> </p>
+<a href="tel:004915155549489" target="_blank"> <img id="call" name="call" src="telefon3.png" alt="not found"></a>
+</div>
+
+<div id="dlinkedin">
+<p class="ctext">Let's connect</p>
+<p class="link"><a href="https://www.linkedin.com/in/tina-schickle-095938154" target="_blank">My Linkedin Profile</a></p>
+<a href="https://www.linkedin.com/in/tina-schickle-095938154" target="_blank"> <img id="clinkedin" name="linkedin" src="linkedin.png" alt="not found"></a>
+</div>
+
+</div>
+
+	
+
+<div class="contact">
+
+<p>Let's talk!</p>
+<a href="./Contact.html"><img id="whatsapp" name="whatsapp" src="whatsapp.png" alt="not found"></a>
+<a href="./Contact.html"><img id="email" name="email" src="email.png" alt="not found"></a>
+<a href="./Contact.html"><img id="call" name="call" src="telefon3.png" alt="not found"></a>
+<a href="./Contact.html"><img id="linkedin" name="linkedin" src="linkedin.png" alt="not found"></a>
+
+
+
+</div>
+
+</body>
+
+</html>
