@@ -119,6 +119,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  z-index: 3;
 }
 
 .contact {
