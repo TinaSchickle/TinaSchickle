@@ -52,6 +52,7 @@
 
 #description {
   position: relative;
+  text-align: justify;
   background-image: linear-gradient(
       hsla(215, 30%, 70%, 0.9) 0%,
       hsla(215, 30%, 70%, 0.5) 50%,
