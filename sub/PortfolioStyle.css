@@ -92,7 +92,7 @@
 /*------------ HEADING TEXT AT TOP "LONGTEXT"----------*/
 .longtext {
   position: relative;
-
+  text-align: justify;
   padding: 1rem;
   width: 85vw;
   max-height: 20vw;
@@ -239,6 +239,7 @@
 /*------------ TEXT BOX----------*/
 .portfolio p {
   position: relative;
+  text-align: justify;
   background-image: url(w2.png);
   color: rgb(19, 17, 17);
   font-weight: 500;
@@ -255,7 +256,7 @@
   object-fit: contain;
   overflow: auto;
   border: 2px solid grey;
-  text-align: left;
+
   /* border: 5px solid blue; */
 }
 
