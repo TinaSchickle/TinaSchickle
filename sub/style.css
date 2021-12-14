@@ -160,3 +160,7 @@ body {
   text-align: right;
   /* border: 5px solid pink; */
 }
+
+a {
+  color: #2c87f0;
+}
