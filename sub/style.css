@@ -28,7 +28,7 @@ body {
   right: 0; /*moves entire navbar to the right*/
   /*align-self: left; */
   position: fixed; /*fixiert die Leiste , sodass sie auch beim Scrollen nicht verschwindet*/
-  z-index: 4; /* Damit das Untermenü immer über all den anderen Elementen ist */
+  z-index: 5; /* Damit das Untermenü immer über all den anderen Elementen ist */
   margin: 0;
   padding: 1em;
   padding-bottom: 0.9em;
