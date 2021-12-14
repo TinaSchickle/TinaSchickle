@@ -60,6 +60,7 @@ hr {
   margin: auto;
   height: 20vw;
   margin-top: 2rem;
+  z-index: 3;
   /* border: 5px solid pink; */
 }
 
