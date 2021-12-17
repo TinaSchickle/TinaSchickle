@@ -11,7 +11,10 @@ body {
   width: 100vw;
   height: 100vh;
 
-  background-image: url("backy.jpg");
+  /* background-image: url("backy2.png"); */
+
+  /* background-color: rgba(166, 163, 162, 1); */
+  background: rgba(212, 204, 201, 0.6);
   background-attachment: fixed; /*make sure the entire element is always covered*/
   background-size: cover; /* image to cover the entire element*/
   background-repeat: no-repeat;
