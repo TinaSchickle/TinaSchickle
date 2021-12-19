@@ -169,6 +169,7 @@
   position: relative;
   /* top: 12.8rem; */
   height: 25vw;
+  min-width: 25vw;
 
   /* background: rgba(212, 204, 201, 0.6); */
 }
