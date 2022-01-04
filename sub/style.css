@@ -32,7 +32,7 @@ body {
   z-index: 5; /* Damit das Untermenü immer über all den anderen Elementen ist */
   margin: 0;
   padding: 1em;
-  padding-bottom: 0.9em;
+  padding-bottom: 1.1em;
   left: 0;
   bottom: 0;
 }
@@ -54,6 +54,9 @@ body {
   text-decoration: none; /* Entfernt das Unterstreichen der Links im Menü */
   white-space: nowrap;
   padding: 0.1em 1em;
+  border: 1.5px solid grey;
+  border-radius: 1rem;
+  margin: 0.2rem;
 }
 
 .menu li a:hover {
@@ -87,7 +90,7 @@ body {
 .welcome h2 {
   position: absolute;
   /* padding-top: 0; */
-  top: 25%;
+  top: 28%;
   left: 50%;
   transform: translate(-50%, -50%); /*centers it*/
   font-size: 3vw;

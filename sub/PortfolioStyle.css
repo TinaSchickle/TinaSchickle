@@ -79,7 +79,9 @@
   width: 10vw;
   border-radius: 0.5rem;
   height: 1rem;
-  font: 400 1.2vw/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+  font-weight: 550;
+  font-size: 1.2vw;
+  font-family: Garamond;
 }
 
 /*------- @MEDIA FOR P IN SMALL CONTAINER AT TOP------------*/
@@ -241,7 +243,18 @@
 .portfolio p {
   position: relative;
   text-align: justify;
-  background-image: url(w2.png);
+  /* background-image: url(w2.png); */
+  background-image: linear-gradient(
+      hsla(215, 30%, 70%, 0.9) 0%,
+      hsla(215, 30%, 70%, 0) 50%,
+      hsla(215, 30%, 70%, 0.9) 100%
+    ),
+    linear-gradient(
+      to right,
+      hsla(215, 30%, 80%, 0.8) 30%,
+      white 50%,
+      hsla(215, 30%, 80%, 0.8) 70%
+    );
   color: rgb(19, 17, 17);
   font-weight: 500;
   margin: auto; /*adapts container size to text content*/

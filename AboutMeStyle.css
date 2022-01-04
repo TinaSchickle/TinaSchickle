@@ -98,7 +98,18 @@
   justify-content: space-between;
   white-space: nowrap;
   font-size: 2vw;
-  background-color: rgba(141, 144, 148, 0.8);
+  /* background-color: rgba(141, 144, 148, 0.8); */
+  background-image: linear-gradient(
+      hsla(215, 30%, 70%, 0.9) 0%,
+      hsla(215, 30%, 70%, 0.5) 50%,
+      hsla(215, 30%, 70%, 0.9) 100%
+    ),
+    linear-gradient(
+      to right,
+      hsla(215, 30%, 80%, 0.8) 30%,
+      white 50%,
+      hsla(215, 30%, 80%, 0.8) 70%
+    );
   color: white;
   width: 30vw;
   max-height: auto;
@@ -139,7 +150,18 @@
   width: 70vw;
   padding: 1rem;
   color: black;
-  background-image: url("sub/perle.jpg");
+  /* background-image: url("sub/perle.jpg"); */
+  background-image: linear-gradient(
+      hsla(215, 30%, 70%, 0.9) 0%,
+      hsla(215, 30%, 70%, 0.5) 50%,
+      hsla(215, 30%, 70%, 0.9) 100%
+    ),
+    linear-gradient(
+      to right,
+      hsla(215, 30%, 80%, 0.8) 30%,
+      white 50%,
+      hsla(215, 30%, 80%, 0.8) 70%
+    );
   background-size: cover; /* image to cover the entire element*/
   background-repeat: no-repeat;
   border-radius: 2em;

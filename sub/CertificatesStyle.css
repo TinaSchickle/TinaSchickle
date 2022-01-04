@@ -71,6 +71,7 @@ hr {
 .certi_small p {
   position: absolute;
   padding: 0.5rem;
+  margin-left: -1rem;
   white-space: nowrap;
   /* margin-left: 0.7vw; */
   background-image: linear-gradient(
@@ -84,10 +85,12 @@ hr {
       white 50%,
       hsla(215, 30%, 80%, 0.8) 70%
     );
-  width: 10vw;
+  width: 12vw;
   border-radius: 0.5rem;
   height: 1rem;
-  font: 400 1.2vw/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+  font-weight: 550;
+  font-size: 1.2vw;
+  font-family: Garamond;
 }
 @media screen and (max-width: 600px) {
   .certi_small p {
