@@ -9,19 +9,29 @@ hr {
   height: 0.2rem;
   border: none;
   border-radius: 2rem;
-  background-color: #ff9d2f;
+  /* background-color: #1426adb3; */
+  background-image: linear-gradient(
+      hsla(215, 30%, 70%, 0.9) 0%,
+      hsla(215, 30%, 70%, 0) 50%,
+      hsla(215, 30%, 70%, 0.9) 100%
+    ),
+    linear-gradient(
+      to right,
+      hsla(215, 30%, 80%, 0.8) 30%,
+      white 50%,
+      hsla(215, 30%, 80%, 0.8) 70%
+    );
   width: 90vw;
   box-shadow: 0 0 0.7rem 0.7rem #3a3229;
+  
 }
 
 /*--------------HEADING "CERTIFICATION"-----------------*/
 
-.cheading {
+.c_heading {
   position: relative;
-  /* width: 50vw; */
-  padding-top: 16%;
+  padding-top: 10%;
   z-index: 2;
-  /* border: 5px solid green; */
 }
 
 #certi_heading {
@@ -44,7 +54,6 @@ hr {
       white 50%,
       hsla(215, 30%, 80%, 0.8) 70%
     );
-  /* border: 5px solid green; */
 }
 
 /* -----------------SMALL CONTAINER AT THE TOP----------------  */
@@ -58,7 +67,7 @@ hr {
   text-align: center;
   width: 55vw;
   margin: auto;
-  height: 20vw;
+  height: auto;
   margin-top: 2rem;
   z-index: 4;
   /* border: 5px solid pink; */
@@ -89,7 +98,7 @@ hr {
   border-radius: 0.5rem;
   height: 1rem;
   font-weight: 550;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   font-family: Garamond;
 }
 @media screen and (max-width: 600px) {
@@ -104,7 +113,6 @@ hr {
   height: auto;
   margin-top: 5%;
   margin-left: 3%;
-  /* border: 5px solid red; */
 }
 
 .big div {
@@ -114,7 +122,6 @@ hr {
   justify-content: space-between;
   align-items: stretch;
   text-align: center;
-  /* border: 5px solid darkslategrey; */
 }
 /* ----------------IMAGES-----------------  */
 .big img {
@@ -130,7 +137,6 @@ hr {
   width: 50vw;
   flex-wrap: nowrap;
   left: -2rem;
-  /* border: 10px solid pink; */
 }
 
 @media screen and (max-width: 750px) {
@@ -151,7 +157,7 @@ hr {
   padding: 1rem;
   padding-bottom: 2.2rem;
   font-family: Garamond;
-  font-size: 1.6vw;
+  font-size: 1.2rem;
   border: 3px solid grey;
   background-image: linear-gradient(
       hsla(215, 30%, 70%, 0.9) 0%,
@@ -164,6 +170,8 @@ hr {
       white 50%,
       hsla(215, 30%, 80%, 0.8) 70%
     );
+  background-image: url(images/backy1.jpg);
+  color: white;
 }
 
 .cTriz h2 {
@@ -199,7 +207,7 @@ hr {
   }
 
   .big h2 {
-    max-height: 2vw;
+    max-height: 1rem;
   }
 }
 
@@ -215,8 +223,6 @@ hr {
 .big p {
   position: absolute;
   margin-top: 8rem;
-
-  /* min-width: 25vw; */
   max-width: 45vw;
   min-height: 20%; /*to adapt div to text content*/
   padding: 1rem;
@@ -225,15 +231,19 @@ hr {
   font-family: Garamond;
   font-size: 1.5rem;
   border-radius: 2rem;
-  background: rgb(255, 157, 47);
-  background: radial-gradient(
-    circle,
-    rgba(247, 217, 85, 0.852) 0%,
-    rgb(232, 156, 57) 100%
-  );
 
-  /* border: 5px solid blue; */
-}
+  background-image: linear-gradient(
+    hsla(215, 30%, 70%, 0.9) 0%,
+    hsla(215, 30%, 70%, 0) 50%,
+    hsla(215, 30%, 70%, 0.9) 100%
+  ),
+  linear-gradient(
+    to right,
+    hsla(215, 30%, 80%, 0.8) 30%,
+    white 50%,
+    hsla(215, 30%, 80%, 0.8) 70%
+  );
+  
 
 /* -----------------MEDIA BIG P-----------------------  */
 

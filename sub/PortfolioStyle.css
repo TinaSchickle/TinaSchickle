@@ -4,10 +4,9 @@
 
 /*--------------HEADING "CERTIFICATION"-----------------*/
 
-.pheading {
+.p_heading {
   position: relative;
-  /* width: 50vw; */
-  padding-top: 16%;
+  padding-top: 10%;
   z-index: 2;
   /* border: 5px solid green; */
 }
@@ -32,7 +31,6 @@
       white 50%,
       hsla(215, 30%, 80%, 0.8) 70%
     );
-  /* border: 5px solid green; */
 }
 
 /* -----------------SMALL CONTAINER AT THE TOP----------------  */
@@ -47,12 +45,10 @@
   width: 70vw;
   margin-left: auto;
   margin-right: auto;
-
   height: auto;
   margin-top: 2rem;
   padding-bottom: 2.5rem;
   z-index: 4;
-  /* border: 5px solid pink; */
 }
 
 /*----------IMG AND P IN SMALL CONTAINER AT TOP----------*/
@@ -63,7 +59,8 @@
 
 .port_small p {
   position: absolute;
-  padding: 0.5rem;
+  padding: 0.8rem;
+
   white-space: nowrap;
   background-image: linear-gradient(
       hsla(215, 30%, 70%, 0.9) 0%,
@@ -80,7 +77,7 @@
   border-radius: 0.5rem;
   height: 1rem;
   font-weight: 550;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   font-family: Garamond;
 }
 
@@ -96,23 +93,22 @@
   position: relative;
   text-align: justify;
   padding: 1rem;
-  width: 85vw;
-  max-height: 20vw;
+  width: 65vw;
+  max-height: 10vw;
   margin: auto;
   margin-top: 1rem;
-
   padding: 0.5rem;
-
   font-family: Garamond;
-  font-size: 1vw;
-  font-weight: 800;
+  font-size: 1.2rem;
+  left: 5rem;
+  top: 2rem;
+  border: 2px solid black;
+
   -webkit-text-stroke-width: 0.1px;
   -webkit-text-stroke-color: black;
   color: rgb(41, 38, 38);
-
+  font-weight: 100;
   border-radius: 1rem;
-  border-bottom: 2px dashed rgb(23, 0, 128);
-  border-top: 2px dashed rgb(23, 0, 128);
   overflow: auto;
   z-index: 3;
 
@@ -151,17 +147,100 @@
   width: 95vw;
   height: auto;
   margin-left: 3%;
-  /* border: 3px solid green; */
+  left: 3.1rem;
 }
-/*------------ @MEDIA ENTIRE PORTFOLIO CONTAINER----------*/
-/* @media screen and (max-width: 1000px) {
-         .portfolio {
-
-           top: 8%;
-         }
-       } */
 
 /*------------ SINGLE DIVS ( with img,p and a) ----------*/
+
+.swiper {
+  /* right: 5rem; */
+  width: 60%;
+  height: fit-content;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.reactTitle {
+  border: 5px solid blue;
+  position: relative;
+  left: 7rem;
+  top: 40%;
+  height: 2vh;
+  min-width: 15vw;
+  padding: 1rem;
+  white-space: nowrap;
+  border-radius: 4rem;
+  border: 2px solid grey;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-family: Garamond;
+  font-size: 1.6rem;
+  font-weight: 1000;
+  background-image: url(images/backy1.jpg);
+  color: white;
+}
+
+.reactText {
+  text-align: justify;
+  /* background-image: url(w2.png); */
+  background-image: linear-gradient(
+      hsla(215, 30%, 70%, 0.9) 0%,
+      hsla(215, 30%, 70%, 0) 50%,
+      hsla(215, 30%, 70%, 0.9) 100%
+    ),
+    linear-gradient(
+      to right,
+      hsla(215, 30%, 80%, 0.8) 30%,
+      white 50%,
+      hsla(215, 30%, 80%, 0.8) 70%
+    );
+  color: rgb(19, 17, 17);
+  font-weight: 500;
+  text-align: justify;
+  font-weight: 500;
+  font-family: Garamond;
+  font-size: 1.45rem;
+  max-width: 32rem;
+  max-height: 6rem;
+  position: relative;
+  right: 14.5rem;
+  top: 6rem;
+  min-width: 12vw;
+  padding: 1rem;
+  border-radius: 2rem;
+  object-fit: contain;
+  border: 2px solid grey;
+  padding-bottom: 2rem;
+}
+
+#reactApplication {
+  padding-bottom: 5rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  white-space: normal;
+  justify-content: flex-start;
+  text-align: center;
+  position: relative;
+}
+
+@media screen and (max-width: 700px) {
+  .reactTitle {
+    font-size: 1rem;
+    min-width: 10rem;
+    max-height: 6vh;
+    padding: 0.5rem;
+    left: 10rem;
+  }
+
+  .swiper {
+    width: 900%;
+  }
+}
+
 .portfolio div {
   display: flex;
   flex-direction: row;
@@ -172,15 +251,7 @@
   /* top: 12.8rem; */
   height: 25vw;
   min-width: 25vw;
-
-  /* background: rgba(212, 204, 201, 0.6); */
 }
-
-/* @media screen and (max-width: 800px) {
-         .portfolio div {
-           top: 8rem;
-         }
-       } */
 
 /*------------ IMAGES AND TEXT ----------*/
 
@@ -189,8 +260,6 @@
   height: auto;
   max-width: 35%;
   object-fit: contain;
-
-  /* border: 4px solid purple; */
 }
 
 /*------------ LINKED HEADING IN THE MIDDLE----------*/
@@ -211,8 +280,8 @@
   font-family: Garamond;
   font-size: 1.6rem;
   font-weight: 1000;
-  color: black;
-  background-image: url(bluebacky.png);
+  background-image: url(images/backy1.jpg);
+  color: white;
 }
 /*------------ @MEDIA FOR LINK IN MIDDLE----------*/
 @media screen and (max-width: 1200px) {
@@ -268,10 +337,7 @@
   font-size: 1.45rem;
   border-radius: 2rem;
   object-fit: contain;
-  overflow: auto;
   border: 2px solid grey;
-
-  /* border: 5px solid blue; */
 }
 
 /*------------ @MEDIA TEXT BOX----------*/
@@ -283,11 +349,14 @@
     max-height: 14vh;
     right: 1.5rem;
   }
+
+  .react {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .portfolio p {
-    /*1200 or smaller*/
     max-width: 70%;
     font-size: 1rem;
     max-height: 50%;
@@ -295,5 +364,9 @@
     font-size: 0.8rem;
     border-radius: 0.2rem;
     padding: 0.2rem;
+  }
+
+  .react {
+    display: none;
   }
 }

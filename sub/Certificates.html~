@@ -101,7 +101,7 @@
 		flex-direction: column;
 		align-items: flex-end;
 		height: 200px;
-		/*border: 5px solid green;*/
+
 	}
 	
 	.contact img {
@@ -134,7 +134,7 @@
 		text-align: center;
 		font: 400 70px/0.8 'Dancing Script', cursive, Helvetica, sans-serif;
 		font-weight: bold;
-		/*border: 5px solid green;*/
+		
 	}
 	/*?????????In general: what's a good practise using positon aboslute/relative? When should I use what? I thought that it's a good approach to always put the divs/main divs to absolute and then everything else like img, p etc.ie p, img etc to relative? But then some things only seem to work in either relative or absolute.. */
 	

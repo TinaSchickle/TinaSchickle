@@ -119,7 +119,7 @@ svg {
     margin: 0; /* Remove any browser-default margins. */
     width: 100%;    /* Height and width fallback for older browsers. */
    	padding-top: 0px; /* 16:9 Aspect Ratio */
-	/*border: 5px solid green;*/
+	
 	margin-top: 0px; 	
 	/*padding: 100px; why is this not doing anything????*/
 }
@@ -241,7 +241,7 @@ right: 20px;
    align-items: flex-end;
    justify-content: space-between;/*warum funktioniert das nicht???*/
    height: 200px;
-/*border: 5px solid green;*/
+
 }
 
 .contact img{

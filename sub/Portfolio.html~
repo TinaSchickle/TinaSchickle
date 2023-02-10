@@ -107,7 +107,7 @@
 	width:100vw;  /*??????????????????????no matter what I try (100vw, 1500px)or left:0px it wouldnt go all the way to the left like the navigation bar does - there is always this little gab on the left*/
 	top:-200px; /*?????????????why can I only make this line up to the navbar by using a minus value*/
 	margin: 0px auto;
-	/*border: 5px solid blue*/}
+}
 
 
 /*?????????????how can I make this side bar on the right with the contact symbols be static so that the symbols don't disappear when zooming in?*/
@@ -121,7 +121,6 @@
    height: 200px;
    justify-content: space-between;
    height: 200px;
-/*border: 5px solid green;*/
 }
 
 .contact img{

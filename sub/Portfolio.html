@@ -11,6 +11,12 @@
     <!-- Portfolio CSS Stylesheet -->
     <link rel="stylesheet" href="PortfolioStyle.css" />
 
+    <!-- Slider Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <style></style>
   </head>
 
@@ -38,15 +44,7 @@
       </div>
     </header>
 
-    <br />
-    <br />
-    <div class="welcome">
-      <img src="wel.png" alt="not found" />
-      <h2>Tina Schickle</h2>
-      <p>Welcome to my website and thank you for dropping by</p>
-    </div>
-
-    <div class="pheading"><h1 id="port_heading">Portfolio</h1></div>
+    <div class="p_heading"><h1 id="port_heading">Portfolio</h1></div>
 
     <div class="port_small">
       <div class="p1">
@@ -77,23 +75,29 @@
         <p>Bankist App</p>
       </div>
 
-      <div class="p4">
+      <div class="p5">
         <a href="#mapty"
           ><img id="pMapty" src="mapty/mapty.png" alt="not found"
         /></a>
         <p>Mapty</p>
       </div>
+
+      <div class="p6">
+        <a href="#reactApplication"
+          ><img id="pReact" src="images/DetailPage.png"
+        /></a>
+        <p>React</p>
+      </div>
     </div>
 
     <div class="longtext">
-      <h2>
+      <p>
         I created most of the follwing projects in my JavaScript Course. The
         HTML and CSS files were already provided, but everything done with
-        JavaScript was fully implemented by myself. The focus of the course was
-        to develop my confidence using JS to build interactive websites. Feel
+        JavaScript was fully implemented by myself. Feel
         free to click on the headings in the middle to take a closer look at the
         application.
-      </h2>
+      </p>
     </div>
 
     <div class="portfolio">
@@ -148,14 +152,47 @@
       <div id="mapty">
         <img src="mapty/mapty.png" alt="mapty" />
         <a href="mapty/mapty.html" target="_blanc">Mapty</a>
-
         <p>
           Mapty is an application that tracks your running and cycling history.
           It uses geolocation, external libraries and saving data to the
           browser.
         </p>
       </div>
+      </div>
     </div>
+
+<div class="react">
+    <div id="reactApplication">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+           <img src="images/StartPage.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/ResultPage.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/DetailPage.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/Feedback.png" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="reactTitle">React Application</div>
+    <div class="reactText">
+      This is a first draft of a search application which also asks the user to rate the received answers/articles. The application is connected with endpoints receiving the feedback data and updating the respective reviews. 
+    </div>
+    </div>
+    
+</div>
 
     <div class="flex-container">
       <div class="contact">
@@ -184,5 +221,22 @@
         /></a>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // autoplay: {
+        //   deley: 2000,
+        //   disableOnInteraction: false,
+        // },
+        loop: true,
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
