@@ -1,340 +1,301 @@
 <!DOCTYPE html>
 <html lang="eng">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="witdth=device.width, initital-scale=1" />
-		<title> Portfolio Tina Schickle </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="witdth=device.width, initital-scale=1" />
+    <title>Portfolio Tina Schickle</title>
 
-		<style>
-		
-		
-		@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&display=swap');
-		
-		body {
- 	position: absolute;
-  	top: 0px;
-  	left: 0px;
-  	bottom: 0px;
-  	right: 0px;
-  	height: 100vw;
-	background-image: url('backy.jpg');
-	background-attachment: fixed; /*make sure the entire element is always covered*/
-	background-size: cover;/* image to cover the entire element*/
-	background-repeat: no-repeat;
-				}
-		
-	 
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&display=swap");
 
-					
-	.menu{
-	background-color: #ff9d2f;
-	top: 0px;
-	height: 60px;
-	width: 100%;
-	right: 0px; /*moves entire navbar to the right*/
-	align-self: left;
-	position: fixed; /*fixiert die Leiste , sodass sie auch beim Scrollen nicht verschwindet*/
-	z-index:1; /* Damit das Untermenü immer über all den anderen Elementen ist */
-	margin:0px;
-	padding: 0px;
-	
+      body {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        height: 100vw;
+        background-image: url("backy.jpg");
+        background-attachment: fixed; /*make sure the entire element is always covered*/
+        background-size: cover; /* image to cover the entire element*/
+        background-repeat: no-repeat;
+      }
 
-	}
+      .menu {
+        background-color: #ff9d2f;
+        top: 0px;
+        height: 60px;
+        width: 100%;
+        right: 0px; /*moves entire navbar to the right*/
+        align-self: left;
+        position: fixed; /*fixiert die Leiste , sodass sie auch beim Scrollen nicht verschwindet*/
+        z-index: 1; /* Damit das Untermenü immer über all den anderen Elementen ist */
+        margin: 0px;
+        padding: 0px;
+      }
 
-	.menu ul {
-		
-	list-style-type: none; / /* Entfernt die Auflistungszeichen der Links im Menü */
-	  /* richtet Text nebeneinander statt untereinander aus */
-	overflow: auto; /* sollte kein Platz für das Wort sein, fügt es scroll Funktion hinzu*/
-	font-size: auto;
-	display: flex;
-	justify-content: center;
-	font-size: 30px;
-	padding: 5px;
-	margin: 5px;
-	
-	}
-		
-	
-	
-.menu li a {
-		display: block; /*macht ges. Linkbereich klickbar und nicht nur den Text*/
-		color: white;
-		text-decoration: none; /* Entfernt das Unterstreichen der Links im Menü */
-		padding: 5px 10px 5px 10px;
-	}	
-	
-.menu li a:hover {
-		background-color: #23699c;
-	}
-	
-	
-	
-.welcome{
-	position:relative;
-	/*display: inline-block;*/
-	height: 220px;
-	background-image: linear-gradient(#ff9d2f, #ff6126);
-	top: 0px;
-	
- }
-	
+      .menu ul {
+        list-style-type: none; /* Entfernt die Auflistungszeichen der Links im Menü */
+        /* richtet Text nebeneinander statt untereinander aus */
+        overflow: auto; /* sollte kein Platz für das Wort sein, fügt es scroll Funktion hinzu*/
+        font-size: auto;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        padding: 5px;
+        margin: 5px;
+      }
 
-	
-.welcome h2{
-	 position: relative;
-	 text-align: center;
-	 font-size: 50px;
- 	 text-shadow: 4px 4px 3px rgba(0,0,0,0.1);  
-	 top: 20px;
-	}
-	
-.welcome p{
-		position: relative;
-		top: 10px;
-		text-align: center;
-		font: 400 40px/0.8 'Dancing Script', cursive, Helvetica, sans-serif;
-   		 text-shadow: 4px 4px 3px rgba(0,0,0,0.1);  
-   		 line-height: 10%; /*verändert den Zeilenabstand zum vorherigen*/
-   		 }
+      .menu li a {
+        display: block; /*macht ges. Linkbereich klickbar und nicht nur den Text*/
+        color: white;
+        text-decoration: none; /* Entfernt das Unterstreichen der Links im Menü */
+        padding: 5px 10px 5px 10px;
+      }
 
-svg {
- 	position: absolute;
- 	bottom: 0px;
-  	width: 100%;
-  	height: 100px;
+      .menu li a:hover {
+        background-color: #23699c;
+      }
 
- 
-}
+      .welcome {
+        position: relative;
+        /*display: inline-block;*/
+        height: 220px;
+        background-image: linear-gradient(#ff9d2f, #ff6126);
+        top: 0px;
+      }
 
+      .welcome h2 {
+        position: relative;
+        text-align: center;
+        font-size: 50px;
+        text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+        top: 20px;
+      }
 
+      .welcome p {
+        position: relative;
+        top: 10px;
+        text-align: center;
+        font: 400 40px/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+        text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+        line-height: 10%; /*verändert den Zeilenabstand zum vorherigen*/
+      }
 
-.aboutme {
+      svg {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 100px;
+      }
 
-  	position: relative;
-  	display: flex;
-  	top: 30px;
-  	width: 100vw;  /* Set the width to match that of the viewport. */
-  	height: 600px;;
-    margin: 0; /* Remove any browser-default margins. */
-    width: 100%;    /* Height and width fallback for older browsers. */
-   	padding-top: 0px; /* 16:9 Aspect Ratio */
-	
-	margin-top: 0px; 	
-	/*padding: 100px; why is this not doing anything????*/
-}
+      .aboutme {
+        position: relative;
+        display: flex;
+        top: 30px;
+        width: 100vw; /* Set the width to match that of the viewport. */
+        height: 600px;
+        margin: 0; /* Remove any browser-default margins. */
+        width: 100%; /* Height and width fallback for older browsers. */
+        padding-top: 0px; /* 16:9 Aspect Ratio */
 
+        margin-top: 0px;
+        /*padding: 100px; why is this not doing anything????*/
+      }
 
-.aboutme h1{
-	position:absolute;
-	display: inline;
-	top: 10px;
-	left: 40px;
-	margin:20px;
-	font: 400 50px/0.8 'Dancing Script', cursive, Helvetica, sans-serif;
+      .aboutme h1 {
+        position: absolute;
+        display: inline;
+        top: 10px;
+        left: 40px;
+        margin: 20px;
+        font: 400 50px/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+      }
 
-}
+      .aboutme img {
+        position: absolute;
+        top: 80px;
+        left: 40px;
+        bottom: 0;
+        right: 0;
+        height: 470px;
+        width: auto;
+        max-width: 600px;
+        min-height: 200px;
+        object-fit: "contain"; /*bilddimensionen nicht verändern */
+        border-radius: 30px;
+      }
 
+      #description {
+        position: absolute;
+        background-color: rgba(139, 165, 188, 0.8);
+        top: 80px;
+        height: 450px;
+        left: 450px;
+        padding: 10px;
+        border-radius: 30px;
+      }
 
-.aboutme img{
-	position: absolute;
- 	top:80px;
- 	left: 40px;
-  	bottom: 0;
-  	right: 0;
-  	height: 470px;
-   width: auto; 
-  	max-width: 600px;
-  	min-height: 200px;
-  	object-fit:"contain"; /*bilddimensionen nicht verändern */
-	border-radius: 30px;
- 
-}
+      .aboutme p {
+        position: relative;
+        font-size: 24px;
+        width: 850px;
+        color: black;
+        font-family: Garamond;
+        margin-top: 0px;
+        /*background-color:rgba(139, 165, 188, 0.6)*/
+      }
 
-#description{
-	position:absolute;
-	background-color:rgba(139, 165, 188, 0.8);
-	top: 80px;
-	height: 450px;
-	left:450px;
-	padding: 10px;
-	border-radius: 30px;
-}
+      #learnmore {
+        position: absolute;
+        margin: 0px auto; /* sorgt dafür das das div element mittig ist (bei neuen Browsern)*/
+        top: 950px;
+        left: 200px;
+        font-size: 40px;
+        background-color: rgba(141, 144, 148, 0.8);
+        color: white;
+        width: 1000px;
+        align-items: center;
+        text-align: center;
+        border-radius: 100px;
+      }
 
-.aboutme p{
-	position: relative;
-	font-size: 24px;
-	width: 850px;
-	color: black;
-	font-family: Garamond ;
-	margin-top: 0px; 	
-	/*background-color:rgba(139, 165, 188, 0.6)*/
-	}			
+      .reasons {
+        position: absolute;
+        top: 1200px;
+        left: 250px;
+        font-size: 35px;
+        font-family: Garamond;
+        height: 400px;
+        width: 950px;
+        padding: 30px;
+        color: black;
+        background-image: url("perle.jpg");
+        background-size: cover; /* image to cover the entire element*/
+        background-repeat: no-repeat;
+        border-radius: 60px;
+        border: 5px solid grey;
+      }
 
-#learnmore{
-	position:absolute;
- 	margin:0px; auto; /* sorgt dafür das das div element mittig ist (bei neuen Browsern)*/
-	top: 950px;
-	left: 200px;
-	font-size: 40px;
-	background-color: rgba(141, 144, 148, 0.8);
-	color: white;
-	width: 1000px;
-	align-items: center;
-	text-align: center;
-	border-radius:100px;
-	}
+      .reasons li {
+        list-style: none;
+        /*list-style-image: url('haken.png');*/
+      }
 
+      .reasons li:before {
+        content: "✓";
+      }
 
-.reasons {
-		position: absolute;;
-		top: 1200px;
-		left: 250px;
-		font-size: 35px;
-		font-family: Garamond ;
-		height: 400px;
-		width: 950px;
-		padding: 30px;
-		color: black;
-		background-image: url('perle.jpg');
-		background-size: cover;/* image to cover the entire element*/
-		background-repeat: no-repeat;
-		border-radius: 60px;
-		border: 5px solid grey;
-		
-		}
+      .reasons b {
+        font: 400 60px/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+      }
 
-.reasons  li{
-	list-style: none;
-	/*list-style-image: url('haken.png');*/
-}		
+      .arrow {
+        position: absolute;
+        width: 100px;
+        height: 600px;
+        top: 700px;
+        bottom: 0px;
+        left: 1225px;
+        right: 0px;
+      }
 
-.reasons li:before {
-  content: '✓';
-  
-}
+      .arrow img {
+        position: absolute;
+        width: 200px;
+        height: 650px;
+      }
 
-.reasons b{
-font: 400 60px/0.8 'Dancing Script', cursive, Helvetica, sans-serif;}
+      .contact {
+        position: fixed;
+        top: 250px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between; /*warum funktioniert das nicht???*/
+        height: 200px;
+      }
 
-.arrow{
-position: absolute;
-width: 100px;
-height: 600px;
-top: 700px;
-bottom:0px;
-left: 1225px;
-right: 0px;}
+      .contact img {
+        position: relative;
+        top: 100px;
+        height: 70px;
+        margin-bottom: 30px;
+        text-align: right;
+      }
+      .contact p {
+        position: absolute;
+        top: 23px;
+        right: 17px;
+        font: 400 25px/0.8 "Dancing Script", cursive, Helvetica, sans-serif;
+        text-align: right;
+      }
+    </style>
+  </head>
 
-.arrow img{
-position:absolute;
-width: 200px;
-height: 650px;
-}
+  <header>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="./start.html">About me</a>
+        </li>
+        <li>
+          <a href="#CV">CV</a>
+        </li>
+        <li>
+          <a href="#certficates">Certificates</a>
+        </li>
+        <li>
+          <a href="#Portfolio">Portfolio</a>
+        </li>
 
-.contact{
-position: fixed;
-top: 250px;
-right: 20px;
-		 display: flex;
-  flex-direction: column;
-   align-items: flex-end;
-   justify-content: space-between;/*warum funktioniert das nicht???*/
-   height: 200px;
+        <li>
+          <a href="./Contact.html">Get in touch</a>
+        </li>
+      </ul>
+    </div>
+  </header>
 
-}
+  <body>
+    <div class="welcome">
+      <h2><strong>Tina Schickle</strong></h2>
+      <p>Welcome to my website and thank you for dropping by/visiting</p>
 
-.contact img{
-position: relative;
-top: 100px;
-height: 70px;
-margin-bottom: 30px;
-text-align: right;
-}
-.contact p{
-position: absolute;
-top:23px;
-right:17px;
-font: 400 25px/0.8 'Dancing Script', cursive, Helvetica, sans-serif;
-text-align: right;
-			}
-		</style>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 200 100"
+        preserveAspectRatio="none"
+      >
+        <circle fill="white" cx="0" cy="100" r="100" />
+        <circle fill="white" cx="200" cy="100" r="100" />
+      </svg>
+    </div>
 
-	</head>
-	
-	
-<header>
-<div class="menu">
-	<ul >							
-										<li>
-											<a href="./start.html">About me</a>
-										</li>
-									 	<li>
-											<a href="#CV">CV</a>
-										</li>
-										<li>
-											<a href="#certficates">Certificates</a>
-										</li>
-										<li>
-											<a href="#Portfolio">Portfolio</a>
-										</li>
-										
-										<li>
-											<a href="./Contact.html">Get in touch</a>
-										</li>
-	</ul>
-	
-</div>
+    <div class="contactdetails">
+      <h2>
+        Please don't hesitate to contact me. I am more than happy to have a
+        chat!
+      </h2>
 
+      <p id="pwhatsapp">
+        Link to contact me via Whatsapp:
+        <a href="https://wa.me/4915155549489"> +4915155549489 </a>
+      </p>
+      <img id="whatsapp" name="whatsapp" src="whatsapp.png" alt="not found" />
 
+      <p>
+        Send me an email:
+        <img id="email" name="email" src="email.png" alt="not found" />
+      </p>
+    </div>
 
-</header>	
-	
-	
-	
-	
-	
-<body>
-
-<div class="welcome">
-<h2><strong >Tina Schickle</strong></h2>
-<p> Welcome to my website and thank you for dropping by/visiting </p>
-
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
-    <circle fill="white" cx="0" cy="100" r="100" />
-    <circle fill="white" cx="200" cy="100" r="100" />
-  </svg>
-  
-</div>
-
-
-		
-<div class="contactdetails">
-<h2> Please don't hesitate to contact me. I am more than happy to have a chat! </h2>
-
-<p id="pwhatsapp"> Link to contact me via Whatsapp: <a href="https://wa.me/4915155549489"> +4915155549489 </a></p>
-<img id="whatsapp" name="whatsapp" src="whatsapp.png" alt="not found">
-
-<p> Send me an email: 
-<img id="email" name="email" src="email.png" alt="not found">
-
-
-</div>
-
-	
-
-<div class="contact">
-
-<p>Let's talk!</p>
-<img id="whatsapp" name="whatsapp" src="whatsapp.png" alt="not found">
-<img id="email" name="email" src="email.png" alt="not found">
-<img id="call" name="call" src="telefon3.png" alt="not found">
-<img id="linkedin" name="linkedin" src="linkedin.png" alt="not found">
-
-
-
-</div>
-
-</body>
-
+    <div class="contact">
+      <p>Let's talk!</p>
+      <img id="whatsapp" name="whatsapp" src="whatsapp.png" alt="not found" />
+      <img id="email" name="email" src="email.png" alt="not found" />
+      <img id="call" name="call" src="telefon3.png" alt="not found" />
+      <img id="linkedin" name="linkedin" src="linkedin.png" alt="not found" />
+    </div>
+  </body>
 </html>
