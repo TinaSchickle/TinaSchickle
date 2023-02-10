@@ -37,17 +37,18 @@
 .port_small {
   position: relative;
   display: flex;
+  align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: stretch;
+  /* align-items: stretch; */
   text-align: center;
   width: 70vw;
   margin-left: auto;
   margin-right: auto;
   height: auto;
   margin-top: 2rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 2rem;
   z-index: 4;
 }
 
@@ -60,7 +61,7 @@
 .port_small p {
   position: absolute;
   padding: 0.8rem;
-
+  margin: auto;
   white-space: nowrap;
   background-image: linear-gradient(
       hsla(215, 30%, 70%, 0.9) 0%,
@@ -73,18 +74,31 @@
       white 50%,
       hsla(215, 30%, 80%, 0.8) 70%
     );
-  width: 10vw;
   border-radius: 0.5rem;
-  height: 1rem;
+  height: auto;
   font-weight: 550;
   font-size: 1.2rem;
   font-family: Garamond;
+  text-align: center;
+  margin: auto;
+  width: 12%;
+  margin-left: 1%;
 }
 
-/*------- @MEDIA FOR P IN SMALL CONTAINER AT TOP------------*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
   .port_small p {
-    height: 0.1rem;
+    font-size: 0.2rem;
+    margin: 0;
+    min-width: 15%;
+    padding: 0;
+  }
+
+  .longtext {
+    padding: 0;
+    margin: 0;
+    top: 0rem !important;
+    left: 1rem !important;
+    font-size: 0.5rem !important;
   }
 }
 

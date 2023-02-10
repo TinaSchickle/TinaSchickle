@@ -94,7 +94,7 @@ hr {
       white 50%,
       hsla(215, 30%, 80%, 0.8) 70%
     );
-  width: 12vw;
+  min-width: 12vw;
   border-radius: 0.5rem;
   height: 1rem;
   font-weight: 550;

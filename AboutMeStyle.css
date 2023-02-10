@@ -235,7 +235,8 @@
   max-height: 40vw;
   transform: rotate(25deg);
   z-index: 3;
-  visibility: hidden;
+
+  display: none;
 }
 
 /*----------------@MEDIA OF GOLDEN ARROW IMAGE -----------*/
